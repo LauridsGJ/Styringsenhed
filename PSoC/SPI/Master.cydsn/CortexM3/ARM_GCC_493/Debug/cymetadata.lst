@@ -1,0 +1,1172 @@
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 644
+  27              	cy_meta_configecc:
+  28 0000 02       		.byte	2
+  29 0001 52       		.byte	82
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 01       		.byte	1
+  33 0005 65       		.byte	101
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 3E       		.byte	62
+  37 0009 06       		.byte	6
+  38 000a 01       		.byte	1
+  39 000b 40       		.byte	64
+  40 000c 28       		.byte	40
+  41 000d 07       		.byte	7
+  42 000e 01       		.byte	1
+  43 000f 40       		.byte	64
+  44 0010 03       		.byte	3
+  45 0011 15       		.byte	21
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 66       		.byte	102
+  49 0015 16       		.byte	22
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 38       		.byte	56
+  53 0019 17       		.byte	23
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 03       		.byte	3
+  57 001d 42       		.byte	66
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 04       		.byte	4
+  61 0021 43       		.byte	67
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 02       		.byte	2
+  65 0025 48       		.byte	72
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 06       		.byte	6
+  69 0029 49       		.byte	73
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 04       		.byte	4
+  73 002d 50       		.byte	80
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 60       		.byte	96
+  77 0031 04       		.byte	4
+  78 0032 61       		.byte	97
+  79 0033 06       		.byte	6
+  80 0034 87       		.byte	-121
+  81 0035 1F       		.byte	31
+  82 0036 00       		.byte	0
+  83 0037 60       		.byte	96
+  84 0038 01       		.byte	1
+  85 0039 04       		.byte	4
+  86 003a 04       		.byte	4
+  87 003b 07       		.byte	7
+  88 003c 05       		.byte	5
+  89 003d 07       		.byte	7
+  90 003e 06       		.byte	6
+  91 003f 38       		.byte	56
+  92 0040 07       		.byte	7
+  93 0041 18       		.byte	24
+  94 0042 08       		.byte	8
+  95 0043 0A       		.byte	10
+  96 0044 09       		.byte	9
+  97 0045 01       		.byte	1
+  98 0046 0A       		.byte	10
+  99 0047 10       		.byte	16
+ 100 0048 0B       		.byte	11
+ 101 0049 06       		.byte	6
+ 102 004a 0F       		.byte	15
+ 103 004b 10       		.byte	16
+ 104 004c 10       		.byte	16
+ 105 004d 01       		.byte	1
+ 106 004e 14       		.byte	20
+ 107 004f 04       		.byte	4
+ 108 0050 15       		.byte	21
+ 109 0051 08       		.byte	8
+ 110 0052 17       		.byte	23
+ 111 0053 03       		.byte	3
+ 112 0054 18       		.byte	24
+ 113 0055 56       		.byte	86
+ 114 0056 19       		.byte	25
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 3
+
+
+ 115 0057 01       		.byte	1
+ 116 0058 1A       		.byte	26
+ 117 0059 09       		.byte	9
+ 118 005a 1B       		.byte	27
+ 119 005b 1E       		.byte	30
+ 120 005c 1C       		.byte	28
+ 121 005d 04       		.byte	4
+ 122 005e 20       		.byte	32
+ 123 005f 04       		.byte	4
+ 124 0060 21       		.byte	33
+ 125 0061 04       		.byte	4
+ 126 0062 24       		.byte	36
+ 127 0063 04       		.byte	4
+ 128 0064 25       		.byte	37
+ 129 0065 04       		.byte	4
+ 130 0066 2A       		.byte	42
+ 131 0067 04       		.byte	4
+ 132 0068 2B       		.byte	43
+ 133 0069 04       		.byte	4
+ 134 006a 2C       		.byte	44
+ 135 006b 04       		.byte	4
+ 136 006c 2D       		.byte	45
+ 137 006d 04       		.byte	4
+ 138 006e 30       		.byte	48
+ 139 006f 7F       		.byte	127
+ 140 0070 35       		.byte	53
+ 141 0071 07       		.byte	7
+ 142 0072 36       		.byte	54
+ 143 0073 02       		.byte	2
+ 144 0074 37       		.byte	55
+ 145 0075 18       		.byte	24
+ 146 0076 38       		.byte	56
+ 147 0077 02       		.byte	2
+ 148 0078 3B       		.byte	59
+ 149 0079 20       		.byte	32
+ 150 007a 3E       		.byte	62
+ 151 007b 40       		.byte	64
+ 152 007c 54       		.byte	84
+ 153 007d 09       		.byte	9
+ 154 007e 58       		.byte	88
+ 155 007f 04       		.byte	4
+ 156 0080 59       		.byte	89
+ 157 0081 04       		.byte	4
+ 158 0082 5B       		.byte	91
+ 159 0083 04       		.byte	4
+ 160 0084 5F       		.byte	95
+ 161 0085 01       		.byte	1
+ 162 0086 81       		.byte	-127
+ 163 0087 0D       		.byte	13
+ 164 0088 85       		.byte	-123
+ 165 0089 42       		.byte	66
+ 166 008a 87       		.byte	-121
+ 167 008b 98       		.byte	-104
+ 168 008c 89       		.byte	-119
+ 169 008d 0D       		.byte	13
+ 170 008e 8D       		.byte	-115
+ 171 008f 0D       		.byte	13
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 4
+
+
+ 172 0090 91       		.byte	-111
+ 173 0091 0D       		.byte	13
+ 174 0092 95       		.byte	-107
+ 175 0093 0D       		.byte	13
+ 176 0094 99       		.byte	-103
+ 177 0095 E0       		.byte	-32
+ 178 0096 9D       		.byte	-99
+ 179 0097 02       		.byte	2
+ 180 0098 9F       		.byte	-97
+ 181 0099 0D       		.byte	13
+ 182 009a A5       		.byte	-91
+ 183 009b 31       		.byte	49
+ 184 009c A7       		.byte	-89
+ 185 009d 42       		.byte	66
+ 186 009e A9       		.byte	-87
+ 187 009f 52       		.byte	82
+ 188 00a0 AB       		.byte	-85
+ 189 00a1 A4       		.byte	-92
+ 190 00a2 B5       		.byte	-75
+ 191 00a3 F0       		.byte	-16
+ 192 00a4 B7       		.byte	-73
+ 193 00a5 0F       		.byte	15
+ 194 00a6 B9       		.byte	-71
+ 195 00a7 20       		.byte	32
+ 196 00a8 BB       		.byte	-69
+ 197 00a9 80       		.byte	-128
+ 198 00aa D4       		.byte	-44
+ 199 00ab 40       		.byte	64
+ 200 00ac D9       		.byte	-39
+ 201 00ad 04       		.byte	4
+ 202 00ae DB       		.byte	-37
+ 203 00af 04       		.byte	4
+ 204 00b0 DF       		.byte	-33
+ 205 00b1 01       		.byte	1
+ 206 00b2 05       		.byte	5
+ 207 00b3 16       		.byte	22
+ 208 00b4 0D       		.byte	13
+ 209 00b5 10       		.byte	16
+ 210 00b6 0E       		.byte	14
+ 211 00b7 A1       		.byte	-95
+ 212 00b8 15       		.byte	21
+ 213 00b9 14       		.byte	20
+ 214 00ba 16       		.byte	22
+ 215 00bb 02       		.byte	2
+ 216 00bc 17       		.byte	23
+ 217 00bd 01       		.byte	1
+ 218 00be 1D       		.byte	29
+ 219 00bf 40       		.byte	64
+ 220 00c0 1E       		.byte	30
+ 221 00c1 80       		.byte	-128
+ 222 00c2 21       		.byte	33
+ 223 00c3 A0       		.byte	-96
+ 224 00c4 25       		.byte	37
+ 225 00c5 50       		.byte	80
+ 226 00c6 26       		.byte	38
+ 227 00c7 10       		.byte	16
+ 228 00c8 29       		.byte	41
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 5
+
+
+ 229 00c9 14       		.byte	20
+ 230 00ca 2D       		.byte	45
+ 231 00cb 54       		.byte	84
+ 232 00cc 2E       		.byte	46
+ 233 00cd 02       		.byte	2
+ 234 00ce 31       		.byte	49
+ 235 00cf A0       		.byte	-96
+ 236 00d0 32       		.byte	50
+ 237 00d1 05       		.byte	5
+ 238 00d2 35       		.byte	53
+ 239 00d3 14       		.byte	20
+ 240 00d4 38       		.byte	56
+ 241 00d5 04       		.byte	4
+ 242 00d6 39       		.byte	57
+ 243 00d7 50       		.byte	80
+ 244 00d8 3A       		.byte	58
+ 245 00d9 02       		.byte	2
+ 246 00da 3C       		.byte	60
+ 247 00db 04       		.byte	4
+ 248 00dc 3D       		.byte	61
+ 249 00dd A0       		.byte	-96
+ 250 00de 3E       		.byte	62
+ 251 00df 01       		.byte	1
+ 252 00e0 5E       		.byte	94
+ 253 00e1 42       		.byte	66
+ 254 00e2 5F       		.byte	95
+ 255 00e3 14       		.byte	20
+ 256 00e4 60       		.byte	96
+ 257 00e5 10       		.byte	16
+ 258 00e6 62       		.byte	98
+ 259 00e7 20       		.byte	32
+ 260 00e8 63       		.byte	99
+ 261 00e9 01       		.byte	1
+ 262 00ea 65       		.byte	101
+ 263 00eb 40       		.byte	64
+ 264 00ec 89       		.byte	-119
+ 265 00ed 40       		.byte	64
+ 266 00ee 8D       		.byte	-115
+ 267 00ef 20       		.byte	32
+ 268 00f0 C0       		.byte	-64
+ 269 00f1 70       		.byte	112
+ 270 00f2 C2       		.byte	-62
+ 271 00f3 F0       		.byte	-16
+ 272 00f4 C4       		.byte	-60
+ 273 00f5 F0       		.byte	-16
+ 274 00f6 CA       		.byte	-54
+ 275 00f7 F6       		.byte	-10
+ 276 00f8 CC       		.byte	-52
+ 277 00f9 6F       		.byte	111
+ 278 00fa CE       		.byte	-50
+ 279 00fb FF       		.byte	-1
+ 280 00fc D6       		.byte	-42
+ 281 00fd F0       		.byte	-16
+ 282 00fe D8       		.byte	-40
+ 283 00ff 1E       		.byte	30
+ 284 0100 E6       		.byte	-26
+ 285 0101 60       		.byte	96
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 6
+
+
+ 286 0102 8B       		.byte	-117
+ 287 0103 40       		.byte	64
+ 288 0104 97       		.byte	-105
+ 289 0105 40       		.byte	64
+ 290 0106 E0       		.byte	-32
+ 291 0107 20       		.byte	32
+ 292 0108 00       		.byte	0
+ 293 0109 04       		.byte	4
+ 294 010a 04       		.byte	4
+ 295 010b 26       		.byte	38
+ 296 010c 06       		.byte	6
+ 297 010d 48       		.byte	72
+ 298 010e 08       		.byte	8
+ 299 010f 42       		.byte	66
+ 300 0110 0A       		.byte	10
+ 301 0111 30       		.byte	48
+ 302 0112 14       		.byte	20
+ 303 0113 30       		.byte	48
+ 304 0114 18       		.byte	24
+ 305 0115 38       		.byte	56
+ 306 0116 1A       		.byte	26
+ 307 0117 46       		.byte	70
+ 308 0118 1C       		.byte	28
+ 309 0119 35       		.byte	53
+ 310 011a 20       		.byte	32
+ 311 011b 30       		.byte	48
+ 312 011c 22       		.byte	34
+ 313 011d 05       		.byte	5
+ 314 011e 24       		.byte	36
+ 315 011f 05       		.byte	5
+ 316 0120 26       		.byte	38
+ 317 0121 30       		.byte	48
+ 318 0122 28       		.byte	40
+ 319 0123 31       		.byte	49
+ 320 0124 2A       		.byte	42
+ 321 0125 04       		.byte	4
+ 322 0126 2C       		.byte	44
+ 323 0127 35       		.byte	53
+ 324 0128 30       		.byte	48
+ 325 0129 40       		.byte	64
+ 326 012a 32       		.byte	50
+ 327 012b 26       		.byte	38
+ 328 012c 34       		.byte	52
+ 329 012d 1E       		.byte	30
+ 330 012e 36       		.byte	54
+ 331 012f 01       		.byte	1
+ 332 0130 3A       		.byte	58
+ 333 0131 20       		.byte	32
+ 334 0132 3E       		.byte	62
+ 335 0133 41       		.byte	65
+ 336 0134 40       		.byte	64
+ 337 0135 24       		.byte	36
+ 338 0136 41       		.byte	65
+ 339 0137 03       		.byte	3
+ 340 0138 42       		.byte	66
+ 341 0139 10       		.byte	16
+ 342 013a 44       		.byte	68
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 7
+
+
+ 343 013b 05       		.byte	5
+ 344 013c 49       		.byte	73
+ 345 013d FF       		.byte	-1
+ 346 013e 4A       		.byte	74
+ 347 013f FF       		.byte	-1
+ 348 0140 4B       		.byte	75
+ 349 0141 FF       		.byte	-1
+ 350 0142 4C       		.byte	76
+ 351 0143 02       		.byte	2
+ 352 0144 4E       		.byte	78
+ 353 0145 70       		.byte	112
+ 354 0146 4F       		.byte	79
+ 355 0147 08       		.byte	8
+ 356 0148 50       		.byte	80
+ 357 0149 04       		.byte	4
+ 358 014a 58       		.byte	88
+ 359 014b 04       		.byte	4
+ 360 014c 5A       		.byte	90
+ 361 014d 04       		.byte	4
+ 362 014e 5F       		.byte	95
+ 363 014f 01       		.byte	1
+ 364 0150 62       		.byte	98
+ 365 0151 C0       		.byte	-64
+ 366 0152 64       		.byte	100
+ 367 0153 40       		.byte	64
+ 368 0154 65       		.byte	101
+ 369 0155 01       		.byte	1
+ 370 0156 66       		.byte	102
+ 371 0157 10       		.byte	16
+ 372 0158 67       		.byte	103
+ 373 0159 11       		.byte	17
+ 374 015a 68       		.byte	104
+ 375 015b C0       		.byte	-64
+ 376 015c 69       		.byte	105
+ 377 015d 01       		.byte	1
+ 378 015e 6B       		.byte	107
+ 379 015f 11       		.byte	17
+ 380 0160 6C       		.byte	108
+ 381 0161 40       		.byte	64
+ 382 0162 6D       		.byte	109
+ 383 0163 01       		.byte	1
+ 384 0164 6E       		.byte	110
+ 385 0165 40       		.byte	64
+ 386 0166 6F       		.byte	111
+ 387 0167 01       		.byte	1
+ 388 0168 85       		.byte	-123
+ 389 0169 80       		.byte	-128
+ 390 016a 89       		.byte	-119
+ 391 016b 80       		.byte	-128
+ 392 016c 8F       		.byte	-113
+ 393 016d 80       		.byte	-128
+ 394 016e 91       		.byte	-111
+ 395 016f 10       		.byte	16
+ 396 0170 93       		.byte	-109
+ 397 0171 68       		.byte	104
+ 398 0172 97       		.byte	-105
+ 399 0173 80       		.byte	-128
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 8
+
+
+ 400 0174 99       		.byte	-103
+ 401 0175 4C       		.byte	76
+ 402 0176 9B       		.byte	-101
+ 403 0177 30       		.byte	48
+ 404 0178 9D       		.byte	-99
+ 405 0179 80       		.byte	-128
+ 406 017a A1       		.byte	-95
+ 407 017b 80       		.byte	-128
+ 408 017c A5       		.byte	-91
+ 409 017d 19       		.byte	25
+ 410 017e A7       		.byte	-89
+ 411 017f 62       		.byte	98
+ 412 0180 A9       		.byte	-87
+ 413 0181 2E       		.byte	46
+ 414 0182 AB       		.byte	-85
+ 415 0183 51       		.byte	81
+ 416 0184 AD       		.byte	-83
+ 417 0185 04       		.byte	4
+ 418 0186 B1       		.byte	-79
+ 419 0187 78       		.byte	120
+ 420 0188 B3       		.byte	-77
+ 421 0189 80       		.byte	-128
+ 422 018a B5       		.byte	-75
+ 423 018b 07       		.byte	7
+ 424 018c B7       		.byte	-73
+ 425 018d 07       		.byte	7
+ 426 018e BB       		.byte	-69
+ 427 018f A2       		.byte	-94
+ 428 0190 BF       		.byte	-65
+ 429 0191 04       		.byte	4
+ 430 0192 C0       		.byte	-64
+ 431 0193 62       		.byte	98
+ 432 0194 C1       		.byte	-63
+ 433 0195 03       		.byte	3
+ 434 0196 C2       		.byte	-62
+ 435 0197 10       		.byte	16
+ 436 0198 C4       		.byte	-60
+ 437 0199 05       		.byte	5
+ 438 019a C5       		.byte	-59
+ 439 019b BE       		.byte	-66
+ 440 019c C6       		.byte	-58
+ 441 019d FC       		.byte	-4
+ 442 019e C7       		.byte	-57
+ 443 019f 0D       		.byte	13
+ 444 01a0 C8       		.byte	-56
+ 445 01a1 1F       		.byte	31
+ 446 01a2 C9       		.byte	-55
+ 447 01a3 FF       		.byte	-1
+ 448 01a4 CA       		.byte	-54
+ 449 01a5 FF       		.byte	-1
+ 450 01a6 CB       		.byte	-53
+ 451 01a7 FF       		.byte	-1
+ 452 01a8 CC       		.byte	-52
+ 453 01a9 23       		.byte	35
+ 454 01aa CE       		.byte	-50
+ 455 01ab F0       		.byte	-16
+ 456 01ac CF       		.byte	-49
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 9
+
+
+ 457 01ad 08       		.byte	8
+ 458 01ae D0       		.byte	-48
+ 459 01af 04       		.byte	4
+ 460 01b0 D6       		.byte	-42
+ 461 01b1 02       		.byte	2
+ 462 01b2 D7       		.byte	-41
+ 463 01b3 2C       		.byte	44
+ 464 01b4 D9       		.byte	-39
+ 465 01b5 04       		.byte	4
+ 466 01b6 DA       		.byte	-38
+ 467 01b7 04       		.byte	4
+ 468 01b8 DB       		.byte	-37
+ 469 01b9 04       		.byte	4
+ 470 01ba DF       		.byte	-33
+ 471 01bb 01       		.byte	1
+ 472 01bc E2       		.byte	-30
+ 473 01bd C0       		.byte	-64
+ 474 01be E4       		.byte	-28
+ 475 01bf 40       		.byte	64
+ 476 01c0 E5       		.byte	-27
+ 477 01c1 01       		.byte	1
+ 478 01c2 E6       		.byte	-26
+ 479 01c3 10       		.byte	16
+ 480 01c4 E7       		.byte	-25
+ 481 01c5 11       		.byte	17
+ 482 01c6 E8       		.byte	-24
+ 483 01c7 C0       		.byte	-64
+ 484 01c8 E9       		.byte	-23
+ 485 01c9 01       		.byte	1
+ 486 01ca EB       		.byte	-21
+ 487 01cb 11       		.byte	17
+ 488 01cc EC       		.byte	-20
+ 489 01cd 40       		.byte	64
+ 490 01ce ED       		.byte	-19
+ 491 01cf 01       		.byte	1
+ 492 01d0 EE       		.byte	-18
+ 493 01d1 40       		.byte	64
+ 494 01d2 EF       		.byte	-17
+ 495 01d3 01       		.byte	1
+ 496 01d4 05       		.byte	5
+ 497 01d5 14       		.byte	20
+ 498 01d6 06       		.byte	6
+ 499 01d7 40       		.byte	64
+ 500 01d8 0D       		.byte	13
+ 501 01d9 10       		.byte	16
+ 502 01da 0E       		.byte	14
+ 503 01db 21       		.byte	33
+ 504 01dc 16       		.byte	22
+ 505 01dd 02       		.byte	2
+ 506 01de 17       		.byte	23
+ 507 01df 15       		.byte	21
+ 508 01e0 1D       		.byte	29
+ 509 01e1 BC       		.byte	-68
+ 510 01e2 1E       		.byte	30
+ 511 01e3 42       		.byte	66
+ 512 01e4 20       		.byte	32
+ 513 01e5 14       		.byte	20
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 10
+
+
+ 514 01e6 21       		.byte	33
+ 515 01e7 10       		.byte	16
+ 516 01e8 22       		.byte	34
+ 517 01e9 12       		.byte	18
+ 518 01ea 23       		.byte	35
+ 519 01eb 02       		.byte	2
+ 520 01ec 29       		.byte	41
+ 521 01ed 14       		.byte	20
+ 522 01ee 2A       		.byte	42
+ 523 01ef 42       		.byte	66
+ 524 01f0 30       		.byte	48
+ 525 01f1 88       		.byte	-120
+ 526 01f2 32       		.byte	50
+ 527 01f3 12       		.byte	18
+ 528 01f4 39       		.byte	57
+ 529 01f5 54       		.byte	84
+ 530 01f6 41       		.byte	65
+ 531 01f7 98       		.byte	-104
+ 532 01f8 45       		.byte	69
+ 533 01f9 A8       		.byte	-88
+ 534 01fa 47       		.byte	71
+ 535 01fb 02       		.byte	2
+ 536 01fc 49       		.byte	73
+ 537 01fd 12       		.byte	18
+ 538 01fe 4B       		.byte	75
+ 539 01ff 44       		.byte	68
+ 540 0200 4F       		.byte	79
+ 541 0201 40       		.byte	64
+ 542 0202 50       		.byte	80
+ 543 0203 08       		.byte	8
+ 544 0204 52       		.byte	82
+ 545 0205 60       		.byte	96
+ 546 0206 62       		.byte	98
+ 547 0207 02       		.byte	2
+ 548 0208 68       		.byte	104
+ 549 0209 80       		.byte	-128
+ 550 020a 69       		.byte	105
+ 551 020b 54       		.byte	84
+ 552 020c 6A       		.byte	106
+ 553 020d 0B       		.byte	11
+ 554 020e 6B       		.byte	107
+ 555 020f 15       		.byte	21
+ 556 0210 72       		.byte	114
+ 557 0211 02       		.byte	2
+ 558 0212 94       		.byte	-108
+ 559 0213 14       		.byte	20
+ 560 0214 95       		.byte	-107
+ 561 0215 74       		.byte	116
+ 562 0216 96       		.byte	-106
+ 563 0217 4B       		.byte	75
+ 564 0218 97       		.byte	-105
+ 565 0219 04       		.byte	4
+ 566 021a 9D       		.byte	-99
+ 567 021b 16       		.byte	22
+ 568 021c 9E       		.byte	-98
+ 569 021d 42       		.byte	66
+ 570 021e 9F       		.byte	-97
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 11
+
+
+ 571 021f 01       		.byte	1
+ 572 0220 A2       		.byte	-94
+ 573 0221 10       		.byte	16
+ 574 0222 A4       		.byte	-92
+ 575 0223 08       		.byte	8
+ 576 0224 A6       		.byte	-90
+ 577 0225 21       		.byte	33
+ 578 0226 AE       		.byte	-82
+ 579 0227 40       		.byte	64
+ 580 0228 AF       		.byte	-81
+ 581 0229 10       		.byte	16
+ 582 022a B2       		.byte	-78
+ 583 022b 40       		.byte	64
+ 584 022c B4       		.byte	-76
+ 585 022d 08       		.byte	8
+ 586 022e B7       		.byte	-73
+ 587 022f 01       		.byte	1
+ 588 0230 C0       		.byte	-64
+ 589 0231 70       		.byte	112
+ 590 0232 C2       		.byte	-62
+ 591 0233 E0       		.byte	-32
+ 592 0234 C4       		.byte	-60
+ 593 0235 F0       		.byte	-16
+ 594 0236 CA       		.byte	-54
+ 595 0237 0F       		.byte	15
+ 596 0238 CC       		.byte	-52
+ 597 0239 0F       		.byte	15
+ 598 023a CE       		.byte	-50
+ 599 023b 0E       		.byte	14
+ 600 023c D0       		.byte	-48
+ 601 023d FE       		.byte	-2
+ 602 023e D2       		.byte	-46
+ 603 023f 1C       		.byte	28
+ 604 0240 D8       		.byte	-40
+ 605 0241 01       		.byte	1
+ 606 0242 EA       		.byte	-22
+ 607 0243 20       		.byte	32
+ 608 0244 52       		.byte	82
+ 609 0245 20       		.byte	32
+ 610 0246 56       		.byte	86
+ 611 0247 80       		.byte	-128
+ 612 0248 D4       		.byte	-44
+ 613 0249 60       		.byte	96
+ 614 024a 8A       		.byte	-118
+ 615 024b 80       		.byte	-128
+ 616 024c 8E       		.byte	-114
+ 617 024d 20       		.byte	32
+ 618 024e 9E       		.byte	-98
+ 619 024f 80       		.byte	-128
+ 620 0250 A6       		.byte	-90
+ 621 0251 20       		.byte	32
+ 622 0252 9A       		.byte	-102
+ 623 0253 20       		.byte	32
+ 624 0254 B2       		.byte	-78
+ 625 0255 20       		.byte	32
+ 626 0256 13       		.byte	19
+ 627 0257 02       		.byte	2
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 12
+
+
+ 628 0258 72       		.byte	114
+ 629 0259 20       		.byte	32
+ 630 025a 8B       		.byte	-117
+ 631 025b 02       		.byte	2
+ 632 025c 9A       		.byte	-102
+ 633 025d 20       		.byte	32
+ 634 025e C4       		.byte	-60
+ 635 025f 10       		.byte	16
+ 636 0260 DC       		.byte	-36
+ 637 0261 80       		.byte	-128
+ 638 0262 00       		.byte	0
+ 639 0263 01       		.byte	1
+ 640 0264 0A       		.byte	10
+ 641 0265 01       		.byte	1
+ 642 0266 10       		.byte	16
+ 643 0267 01       		.byte	1
+ 644 0268 1A       		.byte	26
+ 645 0269 01       		.byte	1
+ 646 026a 00       		.byte	0
+ 647 026b 00       		.byte	0
+ 648 026c 01       		.byte	1
+ 649 026d 0E       		.byte	14
+ 650 026e 0E       		.byte	14
+ 651 026f 00       		.byte	0
+ 652 0270 0E       		.byte	14
+ 653 0271 00       		.byte	0
+ 654 0272 00       		.byte	0
+ 655 0273 00       		.byte	0
+ 656 0274 00       		.byte	0
+ 657 0275 0B       		.byte	11
+ 658 0276 0B       		.byte	11
+ 659 0277 00       		.byte	0
+ 660 0278 00       		.byte	0
+ 661 0279 00       		.byte	0
+ 662 027a 00       		.byte	0
+ 663 027b 00       		.byte	0
+ 664 027c 00       		.byte	0
+ 665 027d 02       		.byte	2
+ 666 027e 02       		.byte	2
+ 667 027f 00       		.byte	0
+ 668 0280 00       		.byte	0
+ 669 0281 00       		.byte	0
+ 670 0282 00       		.byte	0
+ 671 0283 00       		.byte	0
+ 672              		.section	.cywolatch,"a",%progbits
+ 673              		.align	2
+ 674              		.type	cy_meta_wonvl, %object
+ 675              		.size	cy_meta_wonvl, 4
+ 676              	cy_meta_wonvl:
+ 677 0000 BC       		.byte	-68
+ 678 0001 90       		.byte	-112
+ 679 0002 AC       		.byte	-84
+ 680 0003 AF       		.byte	-81
+ 681              		.section	.cycustnvl,"a",%progbits
+ 682              		.align	2
+ 683              		.type	cy_meta_custnvl, %object
+ 684              		.size	cy_meta_custnvl, 4
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 13
+
+
+ 685              	cy_meta_custnvl:
+ 686 0000 00       		.byte	0
+ 687 0001 00       		.byte	0
+ 688 0002 40       		.byte	64
+ 689 0003 05       		.byte	5
+ 690              		.section	.cymeta,"a",%progbits
+ 691              		.align	2
+ 692              		.type	cy_metadata, %object
+ 693              		.size	cy_metadata, 12
+ 694              	cy_metadata:
+ 695 0000 00       		.byte	0
+ 696 0001 01       		.byte	1
+ 697 0002 2E       		.byte	46
+ 698 0003 16       		.byte	22
+ 699 0004 10       		.byte	16
+ 700 0005 69       		.byte	105
+ 701 0006 00       		.byte	0
+ 702 0007 01       		.byte	1
+ 703 0008 00       		.byte	0
+ 704 0009 00       		.byte	0
+ 705 000a 00       		.byte	0
+ 706 000b 00       		.byte	0
+ 707              		.section	.cyflashprotect,"a",%progbits
+ 708              		.align	2
+ 709              		.type	cy_meta_flashprotect, %object
+ 710              		.size	cy_meta_flashprotect, 256
+ 711              	cy_meta_flashprotect:
+ 712 0000 00000000 		.space	256
+ 712      00000000 
+ 712      00000000 
+ 712      00000000 
+ 712      00000000 
+ 713              		.text
+ 714              	.Letext0:
+ 715              		.file 1 "Generated_Source\\PSoC5\\cymetadata.c"
+ 716              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ 717              		.section	.debug_info,"",%progbits
+ 718              	.Ldebug_info0:
+ 719 0000 37010000 		.4byte	0x137
+ 720 0004 0400     		.2byte	0x4
+ 721 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 722 000a 04       		.byte	0x4
+ 723 000b 01       		.uleb128 0x1
+ 724 000c 6E000000 		.4byte	.LASF18
+ 725 0010 01       		.byte	0x1
+ 726 0011 BB010000 		.4byte	.LASF19
+ 727 0015 69010000 		.4byte	.LASF20
+ 728 0019 00000000 		.4byte	.Ldebug_line0
+ 729 001d 02       		.uleb128 0x2
+ 730 001e 01       		.byte	0x1
+ 731 001f 06       		.byte	0x6
+ 732 0020 AF010000 		.4byte	.LASF0
+ 733 0024 02       		.uleb128 0x2
+ 734 0025 01       		.byte	0x1
+ 735 0026 08       		.byte	0x8
+ 736 0027 12000000 		.4byte	.LASF1
+ 737 002b 02       		.uleb128 0x2
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 14
+
+
+ 738 002c 02       		.byte	0x2
+ 739 002d 05       		.byte	0x5
+ 740 002e 5F010000 		.4byte	.LASF2
+ 741 0032 02       		.uleb128 0x2
+ 742 0033 02       		.byte	0x2
+ 743 0034 07       		.byte	0x7
+ 744 0035 32000000 		.4byte	.LASF3
+ 745 0039 02       		.uleb128 0x2
+ 746 003a 04       		.byte	0x4
+ 747 003b 05       		.byte	0x5
+ 748 003c A6010000 		.4byte	.LASF4
+ 749 0040 02       		.uleb128 0x2
+ 750 0041 04       		.byte	0x4
+ 751 0042 07       		.byte	0x7
+ 752 0043 20000000 		.4byte	.LASF5
+ 753 0047 02       		.uleb128 0x2
+ 754 0048 08       		.byte	0x8
+ 755 0049 05       		.byte	0x5
+ 756 004a 4C010000 		.4byte	.LASF6
+ 757 004e 02       		.uleb128 0x2
+ 758 004f 08       		.byte	0x8
+ 759 0050 07       		.byte	0x7
+ 760 0051 09010000 		.4byte	.LASF7
+ 761 0055 03       		.uleb128 0x3
+ 762 0056 04       		.byte	0x4
+ 763 0057 05       		.byte	0x5
+ 764 0058 696E7400 		.ascii	"int\000"
+ 765 005c 02       		.uleb128 0x2
+ 766 005d 04       		.byte	0x4
+ 767 005e 07       		.byte	0x7
+ 768 005f FC000000 		.4byte	.LASF8
+ 769 0063 04       		.uleb128 0x4
+ 770 0064 A0010000 		.4byte	.LASF21
+ 771 0068 02       		.byte	0x2
+ 772 0069 9201     		.2byte	0x192
+ 773 006b 24000000 		.4byte	0x24
+ 774 006f 02       		.uleb128 0x2
+ 775 0070 04       		.byte	0x4
+ 776 0071 04       		.byte	0x4
+ 777 0072 0C000000 		.4byte	.LASF9
+ 778 0076 02       		.uleb128 0x2
+ 779 0077 08       		.byte	0x8
+ 780 0078 04       		.byte	0x4
+ 781 0079 45000000 		.4byte	.LASF10
+ 782 007d 02       		.uleb128 0x2
+ 783 007e 01       		.byte	0x1
+ 784 007f 08       		.byte	0x8
+ 785 0080 5A010000 		.4byte	.LASF11
+ 786 0084 05       		.uleb128 0x5
+ 787 0085 63000000 		.4byte	0x63
+ 788 0089 95000000 		.4byte	0x95
+ 789 008d 06       		.uleb128 0x6
+ 790 008e 95000000 		.4byte	0x95
+ 791 0092 8302     		.2byte	0x283
+ 792 0094 00       		.byte	0
+ 793 0095 02       		.uleb128 0x2
+ 794 0096 04       		.byte	0x4
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 15
+
+
+ 795 0097 07       		.byte	0x7
+ 796 0098 43010000 		.4byte	.LASF12
+ 797 009c 07       		.uleb128 0x7
+ 798 009d 5C000000 		.4byte	.LASF13
+ 799 00a1 01       		.byte	0x1
+ 800 00a2 1F       		.byte	0x1f
+ 801 00a3 AD000000 		.4byte	0xad
+ 802 00a7 05       		.uleb128 0x5
+ 803 00a8 03       		.byte	0x3
+ 804 00a9 00000000 		.4byte	cy_meta_configecc
+ 805 00ad 08       		.uleb128 0x8
+ 806 00ae 84000000 		.4byte	0x84
+ 807 00b2 05       		.uleb128 0x5
+ 808 00b3 63000000 		.4byte	0x63
+ 809 00b7 C2000000 		.4byte	0xc2
+ 810 00bb 09       		.uleb128 0x9
+ 811 00bc 95000000 		.4byte	0x95
+ 812 00c0 03       		.byte	0x3
+ 813 00c1 00       		.byte	0
+ 814 00c2 07       		.uleb128 0x7
+ 815 00c3 4C000000 		.4byte	.LASF14
+ 816 00c7 01       		.byte	0x1
+ 817 00c8 7D       		.byte	0x7d
+ 818 00c9 D3000000 		.4byte	0xd3
+ 819 00cd 05       		.uleb128 0x5
+ 820 00ce 03       		.byte	0x3
+ 821 00cf 00000000 		.4byte	cy_meta_custnvl
+ 822 00d3 08       		.uleb128 0x8
+ 823 00d4 B2000000 		.4byte	0xb2
+ 824 00d8 07       		.uleb128 0x7
+ 825 00d9 35010000 		.4byte	.LASF15
+ 826 00dd 01       		.byte	0x1
+ 827 00de 8B       		.byte	0x8b
+ 828 00df E9000000 		.4byte	0xe9
+ 829 00e3 05       		.uleb128 0x5
+ 830 00e4 03       		.byte	0x3
+ 831 00e5 00000000 		.4byte	cy_meta_wonvl
+ 832 00e9 08       		.uleb128 0x8
+ 833 00ea B2000000 		.4byte	0xb2
+ 834 00ee 05       		.uleb128 0x5
+ 835 00ef 63000000 		.4byte	0x63
+ 836 00f3 FE000000 		.4byte	0xfe
+ 837 00f7 09       		.uleb128 0x9
+ 838 00f8 95000000 		.4byte	0x95
+ 839 00fc FF       		.byte	0xff
+ 840 00fd 00       		.byte	0
+ 841 00fe 07       		.uleb128 0x7
+ 842 00ff 20010000 		.4byte	.LASF16
+ 843 0103 01       		.byte	0x1
+ 844 0104 99       		.byte	0x99
+ 845 0105 0F010000 		.4byte	0x10f
+ 846 0109 05       		.uleb128 0x5
+ 847 010a 03       		.byte	0x3
+ 848 010b 00000000 		.4byte	cy_meta_flashprotect
+ 849 010f 08       		.uleb128 0x8
+ 850 0110 EE000000 		.4byte	0xee
+ 851 0114 05       		.uleb128 0x5
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 16
+
+
+ 852 0115 63000000 		.4byte	0x63
+ 853 0119 24010000 		.4byte	0x124
+ 854 011d 09       		.uleb128 0x9
+ 855 011e 95000000 		.4byte	0x95
+ 856 0122 0B       		.byte	0xb
+ 857 0123 00       		.byte	0
+ 858 0124 07       		.uleb128 0x7
+ 859 0125 00000000 		.4byte	.LASF17
+ 860 0129 01       		.byte	0x1
+ 861 012a C6       		.byte	0xc6
+ 862 012b 35010000 		.4byte	0x135
+ 863 012f 05       		.uleb128 0x5
+ 864 0130 03       		.byte	0x3
+ 865 0131 00000000 		.4byte	cy_metadata
+ 866 0135 08       		.uleb128 0x8
+ 867 0136 14010000 		.4byte	0x114
+ 868 013a 00       		.byte	0
+ 869              		.section	.debug_abbrev,"",%progbits
+ 870              	.Ldebug_abbrev0:
+ 871 0000 01       		.uleb128 0x1
+ 872 0001 11       		.uleb128 0x11
+ 873 0002 01       		.byte	0x1
+ 874 0003 25       		.uleb128 0x25
+ 875 0004 0E       		.uleb128 0xe
+ 876 0005 13       		.uleb128 0x13
+ 877 0006 0B       		.uleb128 0xb
+ 878 0007 03       		.uleb128 0x3
+ 879 0008 0E       		.uleb128 0xe
+ 880 0009 1B       		.uleb128 0x1b
+ 881 000a 0E       		.uleb128 0xe
+ 882 000b 10       		.uleb128 0x10
+ 883 000c 17       		.uleb128 0x17
+ 884 000d 00       		.byte	0
+ 885 000e 00       		.byte	0
+ 886 000f 02       		.uleb128 0x2
+ 887 0010 24       		.uleb128 0x24
+ 888 0011 00       		.byte	0
+ 889 0012 0B       		.uleb128 0xb
+ 890 0013 0B       		.uleb128 0xb
+ 891 0014 3E       		.uleb128 0x3e
+ 892 0015 0B       		.uleb128 0xb
+ 893 0016 03       		.uleb128 0x3
+ 894 0017 0E       		.uleb128 0xe
+ 895 0018 00       		.byte	0
+ 896 0019 00       		.byte	0
+ 897 001a 03       		.uleb128 0x3
+ 898 001b 24       		.uleb128 0x24
+ 899 001c 00       		.byte	0
+ 900 001d 0B       		.uleb128 0xb
+ 901 001e 0B       		.uleb128 0xb
+ 902 001f 3E       		.uleb128 0x3e
+ 903 0020 0B       		.uleb128 0xb
+ 904 0021 03       		.uleb128 0x3
+ 905 0022 08       		.uleb128 0x8
+ 906 0023 00       		.byte	0
+ 907 0024 00       		.byte	0
+ 908 0025 04       		.uleb128 0x4
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 17
+
+
+ 909 0026 16       		.uleb128 0x16
+ 910 0027 00       		.byte	0
+ 911 0028 03       		.uleb128 0x3
+ 912 0029 0E       		.uleb128 0xe
+ 913 002a 3A       		.uleb128 0x3a
+ 914 002b 0B       		.uleb128 0xb
+ 915 002c 3B       		.uleb128 0x3b
+ 916 002d 05       		.uleb128 0x5
+ 917 002e 49       		.uleb128 0x49
+ 918 002f 13       		.uleb128 0x13
+ 919 0030 00       		.byte	0
+ 920 0031 00       		.byte	0
+ 921 0032 05       		.uleb128 0x5
+ 922 0033 01       		.uleb128 0x1
+ 923 0034 01       		.byte	0x1
+ 924 0035 49       		.uleb128 0x49
+ 925 0036 13       		.uleb128 0x13
+ 926 0037 01       		.uleb128 0x1
+ 927 0038 13       		.uleb128 0x13
+ 928 0039 00       		.byte	0
+ 929 003a 00       		.byte	0
+ 930 003b 06       		.uleb128 0x6
+ 931 003c 21       		.uleb128 0x21
+ 932 003d 00       		.byte	0
+ 933 003e 49       		.uleb128 0x49
+ 934 003f 13       		.uleb128 0x13
+ 935 0040 2F       		.uleb128 0x2f
+ 936 0041 05       		.uleb128 0x5
+ 937 0042 00       		.byte	0
+ 938 0043 00       		.byte	0
+ 939 0044 07       		.uleb128 0x7
+ 940 0045 34       		.uleb128 0x34
+ 941 0046 00       		.byte	0
+ 942 0047 03       		.uleb128 0x3
+ 943 0048 0E       		.uleb128 0xe
+ 944 0049 3A       		.uleb128 0x3a
+ 945 004a 0B       		.uleb128 0xb
+ 946 004b 3B       		.uleb128 0x3b
+ 947 004c 0B       		.uleb128 0xb
+ 948 004d 49       		.uleb128 0x49
+ 949 004e 13       		.uleb128 0x13
+ 950 004f 3F       		.uleb128 0x3f
+ 951 0050 19       		.uleb128 0x19
+ 952 0051 02       		.uleb128 0x2
+ 953 0052 18       		.uleb128 0x18
+ 954 0053 00       		.byte	0
+ 955 0054 00       		.byte	0
+ 956 0055 08       		.uleb128 0x8
+ 957 0056 26       		.uleb128 0x26
+ 958 0057 00       		.byte	0
+ 959 0058 49       		.uleb128 0x49
+ 960 0059 13       		.uleb128 0x13
+ 961 005a 00       		.byte	0
+ 962 005b 00       		.byte	0
+ 963 005c 09       		.uleb128 0x9
+ 964 005d 21       		.uleb128 0x21
+ 965 005e 00       		.byte	0
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 18
+
+
+ 966 005f 49       		.uleb128 0x49
+ 967 0060 13       		.uleb128 0x13
+ 968 0061 2F       		.uleb128 0x2f
+ 969 0062 0B       		.uleb128 0xb
+ 970 0063 00       		.byte	0
+ 971 0064 00       		.byte	0
+ 972 0065 00       		.byte	0
+ 973              		.section	.debug_aranges,"",%progbits
+ 974 0000 14000000 		.4byte	0x14
+ 975 0004 0200     		.2byte	0x2
+ 976 0006 00000000 		.4byte	.Ldebug_info0
+ 977 000a 04       		.byte	0x4
+ 978 000b 00       		.byte	0
+ 979 000c 0000     		.2byte	0
+ 980 000e 0000     		.2byte	0
+ 981 0010 00000000 		.4byte	0
+ 982 0014 00000000 		.4byte	0
+ 983              		.section	.debug_line,"",%progbits
+ 984              	.Ldebug_line0:
+ 985 0000 4D000000 		.section	.debug_str,"MS",%progbits,1
+ 985      02004700 
+ 985      00000201 
+ 985      FB0E0D00 
+ 985      01010101 
+ 986              	.LASF17:
+ 987 0000 63795F6D 		.ascii	"cy_metadata\000"
+ 987      65746164 
+ 987      61746100 
+ 988              	.LASF9:
+ 989 000c 666C6F61 		.ascii	"float\000"
+ 989      7400
+ 990              	.LASF1:
+ 991 0012 756E7369 		.ascii	"unsigned char\000"
+ 991      676E6564 
+ 991      20636861 
+ 991      7200
+ 992              	.LASF5:
+ 993 0020 6C6F6E67 		.ascii	"long unsigned int\000"
+ 993      20756E73 
+ 993      69676E65 
+ 993      6420696E 
+ 993      7400
+ 994              	.LASF3:
+ 995 0032 73686F72 		.ascii	"short unsigned int\000"
+ 995      7420756E 
+ 995      7369676E 
+ 995      65642069 
+ 995      6E7400
+ 996              	.LASF10:
+ 997 0045 646F7562 		.ascii	"double\000"
+ 997      6C6500
+ 998              	.LASF14:
+ 999 004c 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 999      6574615F 
+ 999      63757374 
+ 999      6E766C00 
+ 1000              	.LASF13:
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 19
+
+
+ 1001 005c 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 1001      6574615F 
+ 1001      636F6E66 
+ 1001      69676563 
+ 1001      6300
+ 1002              	.LASF18:
+ 1003 006e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 1003      4320342E 
+ 1003      392E3320 
+ 1003      32303135 
+ 1003      30333033 
+ 1004 00a1 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 1004      20726576 
+ 1004      6973696F 
+ 1004      6E203232 
+ 1004      31323230 
+ 1005 00d4 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 1005      66756E63 
+ 1005      74696F6E 
+ 1005      2D736563 
+ 1005      74696F6E 
+ 1006              	.LASF8:
+ 1007 00fc 756E7369 		.ascii	"unsigned int\000"
+ 1007      676E6564 
+ 1007      20696E74 
+ 1007      00
+ 1008              	.LASF7:
+ 1009 0109 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 1009      206C6F6E 
+ 1009      6720756E 
+ 1009      7369676E 
+ 1009      65642069 
+ 1010              	.LASF16:
+ 1011 0120 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 1011      6574615F 
+ 1011      666C6173 
+ 1011      6870726F 
+ 1011      74656374 
+ 1012              	.LASF15:
+ 1013 0135 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 1013      6574615F 
+ 1013      776F6E76 
+ 1013      6C00
+ 1014              	.LASF12:
+ 1015 0143 73697A65 		.ascii	"sizetype\000"
+ 1015      74797065 
+ 1015      00
+ 1016              	.LASF6:
+ 1017 014c 6C6F6E67 		.ascii	"long long int\000"
+ 1017      206C6F6E 
+ 1017      6720696E 
+ 1017      7400
+ 1018              	.LASF11:
+ 1019 015a 63686172 		.ascii	"char\000"
+ 1019      00
+ 1020              	.LASF2:
+ 1021 015f 73686F72 		.ascii	"short int\000"
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccVckAuI.s 			page 20
+
+
+ 1021      7420696E 
+ 1021      7400
+ 1022              	.LASF20:
+ 1023 0169 433A5C55 		.ascii	"C:\\Users\\lauri\\Documents\\PSoC Creator\\SPI\\Mas"
+ 1023      73657273 
+ 1023      5C6C6175 
+ 1023      72695C44 
+ 1023      6F63756D 
+ 1024 0196 7465722E 		.ascii	"ter.cydsn\000"
+ 1024      63796473 
+ 1024      6E00
+ 1025              	.LASF21:
+ 1026 01a0 75696E74 		.ascii	"uint8\000"
+ 1026      3800
+ 1027              	.LASF4:
+ 1028 01a6 6C6F6E67 		.ascii	"long int\000"
+ 1028      20696E74 
+ 1028      00
+ 1029              	.LASF0:
+ 1030 01af 7369676E 		.ascii	"signed char\000"
+ 1030      65642063 
+ 1030      68617200 
+ 1031              	.LASF19:
+ 1032 01bb 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 1032      72617465 
+ 1032      645F536F 
+ 1032      75726365 
+ 1032      5C50536F 
+ 1033              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

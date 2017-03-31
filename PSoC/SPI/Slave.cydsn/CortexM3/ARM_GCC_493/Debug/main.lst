@@ -1,0 +1,973 @@
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"main.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.section	.text.isr_Slave,"ax",%progbits
+  19              		.align	2
+  20              		.global	isr_Slave
+  21              		.thumb
+  22              		.thumb_func
+  23              		.type	isr_Slave, %function
+  24              	isr_Slave:
+  25              	.LFB63:
+  26              		.file 1 "main.c"
+   1:main.c        **** /* ========================================
+   2:main.c        ****  *
+   3:main.c        ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main.c        ****  * All Rights Reserved
+   5:main.c        ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main.c        ****  *
+   7:main.c        ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main.c        ****  * WHICH IS THE PROPERTY OF your company.
+   9:main.c        ****  *
+  10:main.c        ****  * ========================================
+  11:main.c        **** */
+  12:main.c        **** #include "project.h"
+  13:main.c        **** 
+  14:main.c        **** CY_ISR(isr_Slave) 
+  15:main.c        **** {     
+  27              		.loc 1 15 0
+  28              		.cfi_startproc
+  29              		@ args = 0, pretend = 0, frame = 0
+  30              		@ frame_needed = 0, uses_anonymous_args = 0
+  31 0000 10B5     		push	{r4, lr}
+  32              		.cfi_def_cfa_offset 8
+  33              		.cfi_offset 4, -8
+  34              		.cfi_offset 14, -4
+  35              	.LVL0:
+  16:main.c        ****     uint8 i, j, buf[8];     
+  17:main.c        ****     float modtaget = 0;
+  18:main.c        ****     
+  19:main.c        **** //    j = SPIS_1_GetRxBufferSize();          // SPI Read data from SPIS RX software buffer to buf  
+  20:main.c        **** //    
+  21:main.c        **** //    for(i=0u; i<j; i++)     
+  22:main.c        **** //    {         
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 2
+
+
+  23:main.c        **** //        buf[i] = SPIS_1_ReadRxData();     
+  24:main.c        **** //    }        
+  25:main.c        ****     
+  26:main.c        ****     modtaget = SPIS_1_ReadRxData();
+  36              		.loc 1 26 0
+  37 0002 FFF7FEFF 		bl	SPIS_1_ReadRxData
+  38              	.LVL1:
+  39 0006 0446     		mov	r4, r0
+  40              	.LVL2:
+  27:main.c        ****     
+  28:main.c        **** //    if (j>0)  // Process data received....     
+  29:main.c        **** //    {         
+  30:main.c        **** //        // Send last command back to master at next transaction!         
+  31:main.c        ****         SPIS_1_WriteTxData(modtaget);         
+  41              		.loc 1 31 0
+  42 0008 FFF7FEFF 		bl	SPIS_1_WriteTxData
+  43              	.LVL3:
+  32:main.c        **** //    }          
+  33:main.c        ****     
+  34:main.c        ****     LED_Write(modtaget);  // Debug -> Toggle LED!  
+  44              		.loc 1 34 0
+  45 000c E0B2     		uxtb	r0, r4
+  46 000e FFF7FEFF 		bl	LED_Write
+  47              	.LVL4:
+  35:main.c        ****     
+  36:main.c        ****     // Clear Rx Interrupt Source     
+  37:main.c        ****     SPIS_1_ClearFIFO();
+  48              		.loc 1 37 0
+  49 0012 FFF7FEFF 		bl	SPIS_1_ClearFIFO
+  50              	.LVL5:
+  38:main.c        ****     SPIS_1_ClearRxBuffer();
+  51              		.loc 1 38 0
+  52 0016 FFF7FEFF 		bl	SPIS_1_ClearRxBuffer
+  53              	.LVL6:
+  39:main.c        ****     SPIS_1_ClearTxBuffer();    
+  54              		.loc 1 39 0
+  55 001a FFF7FEFF 		bl	SPIS_1_ClearTxBuffer
+  56              	.LVL7:
+  57 001e 10BD     		pop	{r4, pc}
+  58              		.cfi_endproc
+  59              	.LFE63:
+  60              		.size	isr_Slave, .-isr_Slave
+  61              		.section	.text.main,"ax",%progbits
+  62              		.align	2
+  63              		.global	main
+  64              		.thumb
+  65              		.thumb_func
+  66              		.type	main, %function
+  67              	main:
+  68              	.LFB64:
+  40:main.c        ****     
+  41:main.c        ****     // SPIS_ClearRxInterruptSource(source); 
+  42:main.c        **** } 
+  43:main.c        ****  
+  44:main.c        **** int main() 
+  45:main.c        **** {     
+  69              		.loc 1 45 0
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 3
+
+
+  70              		.cfi_startproc
+  71              		@ Volatile: function does not return.
+  72              		@ args = 0, pretend = 0, frame = 0
+  73              		@ frame_needed = 0, uses_anonymous_args = 0
+  74 0000 08B5     		push	{r3, lr}
+  75              		.cfi_def_cfa_offset 8
+  76              		.cfi_offset 3, -8
+  77              		.cfi_offset 14, -4
+  46:main.c        ****     CyGlobalIntEnable;             
+  78              		.loc 1 46 0
+  79              	@ 46 "main.c" 1
+  80 0002 62B6     		CPSIE   i
+  81              	@ 0 "" 2
+  47:main.c        ****     isr_SPI_StartEx(isr_Slave);   
+  82              		.loc 1 47 0
+  83              		.thumb
+  84 0004 0248     		ldr	r0, .L6
+  85 0006 FFF7FEFF 		bl	isr_SPI_StartEx
+  86              	.LVL8:
+  48:main.c        ****     SPIS_1_Start();
+  87              		.loc 1 48 0
+  88 000a FFF7FEFF 		bl	SPIS_1_Start
+  89              	.LVL9:
+  90              	.L4:
+  49:main.c        ****     
+  50:main.c        ****     for(;;)     
+  51:main.c        ****     {         
+  52:main.c        ****         // Do nothing!!!     
+  53:main.c        ****     } 
+  91              		.loc 1 53 0 discriminator 1
+  92 000e FEE7     		b	.L4
+  93              	.L7:
+  94              		.align	2
+  95              	.L6:
+  96 0010 00000000 		.word	isr_Slave
+  97              		.cfi_endproc
+  98              	.LFE64:
+  99              		.size	main, .-main
+ 100              		.text
+ 101              	.Letext0:
+ 102              		.file 2 "c:\\program files (x86)\\cypress\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.
+ 103              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.0\\psoc creator\\import\\gnu\\arm\\4.9.
+ 104              		.file 4 "Generated_Source\\PSoC5/cytypes.h"
+ 105              		.file 5 "Generated_Source\\PSoC5/SPIS_1.h"
+ 106              		.file 6 "Generated_Source\\PSoC5/LED.h"
+ 107              		.file 7 "Generated_Source\\PSoC5/isr_SPI.h"
+ 108              		.file 8 "Generated_Source\\PSoC5/core_cm3.h"
+ 109              		.section	.debug_info,"",%progbits
+ 110              	.Ldebug_info0:
+ 111 0000 08020000 		.4byte	0x208
+ 112 0004 0400     		.2byte	0x4
+ 113 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 114 000a 04       		.byte	0x4
+ 115 000b 01       		.uleb128 0x1
+ 116 000c C0000000 		.4byte	.LASF27
+ 117 0010 01       		.byte	0x1
+ 118 0011 EF010000 		.4byte	.LASF28
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 4
+
+
+ 119 0015 9A010000 		.4byte	.LASF29
+ 120 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 121 001d 00000000 		.4byte	0
+ 122 0021 00000000 		.4byte	.Ldebug_line0
+ 123 0025 02       		.uleb128 0x2
+ 124 0026 04       		.byte	0x4
+ 125 0027 04       		.byte	0x4
+ 126 0028 39000000 		.4byte	.LASF0
+ 127 002c 02       		.uleb128 0x2
+ 128 002d 02       		.byte	0x2
+ 129 002e 07       		.byte	0x7
+ 130 002f 6B000000 		.4byte	.LASF1
+ 131 0033 02       		.uleb128 0x2
+ 132 0034 01       		.byte	0x1
+ 133 0035 06       		.byte	0x6
+ 134 0036 3F000000 		.4byte	.LASF2
+ 135 003a 02       		.uleb128 0x2
+ 136 003b 01       		.byte	0x1
+ 137 003c 08       		.byte	0x8
+ 138 003d 4B000000 		.4byte	.LASF3
+ 139 0041 02       		.uleb128 0x2
+ 140 0042 02       		.byte	0x2
+ 141 0043 05       		.byte	0x5
+ 142 0044 FB010000 		.4byte	.LASF4
+ 143 0048 03       		.uleb128 0x3
+ 144 0049 0A000000 		.4byte	.LASF10
+ 145 004d 02       		.byte	0x2
+ 146 004e 3F       		.byte	0x3f
+ 147 004f 53000000 		.4byte	0x53
+ 148 0053 02       		.uleb128 0x2
+ 149 0054 04       		.byte	0x4
+ 150 0055 05       		.byte	0x5
+ 151 0056 0B020000 		.4byte	.LASF5
+ 152 005a 02       		.uleb128 0x2
+ 153 005b 04       		.byte	0x4
+ 154 005c 07       		.byte	0x7
+ 155 005d 59000000 		.4byte	.LASF6
+ 156 0061 02       		.uleb128 0x2
+ 157 0062 08       		.byte	0x8
+ 158 0063 05       		.byte	0x5
+ 159 0064 E1010000 		.4byte	.LASF7
+ 160 0068 02       		.uleb128 0x2
+ 161 0069 08       		.byte	0x8
+ 162 006a 07       		.byte	0x7
+ 163 006b 6C010000 		.4byte	.LASF8
+ 164 006f 04       		.uleb128 0x4
+ 165 0070 04       		.byte	0x4
+ 166 0071 05       		.byte	0x5
+ 167 0072 696E7400 		.ascii	"int\000"
+ 168 0076 02       		.uleb128 0x2
+ 169 0077 04       		.byte	0x4
+ 170 0078 07       		.byte	0x7
+ 171 0079 4E010000 		.4byte	.LASF9
+ 172 007d 03       		.uleb128 0x3
+ 173 007e D0010000 		.4byte	.LASF11
+ 174 0082 03       		.byte	0x3
+ 175 0083 2C       		.byte	0x2c
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 5
+
+
+ 176 0084 48000000 		.4byte	0x48
+ 177 0088 05       		.uleb128 0x5
+ 178 0089 05020000 		.4byte	.LASF12
+ 179 008d 04       		.byte	0x4
+ 180 008e 9201     		.2byte	0x192
+ 181 0090 3A000000 		.4byte	0x3a
+ 182 0094 05       		.uleb128 0x5
+ 183 0095 B9000000 		.4byte	.LASF13
+ 184 0099 04       		.byte	0x4
+ 185 009a 9301     		.2byte	0x193
+ 186 009c 2C000000 		.4byte	0x2c
+ 187 00a0 02       		.uleb128 0x2
+ 188 00a1 08       		.byte	0x8
+ 189 00a2 04       		.byte	0x4
+ 190 00a3 AD000000 		.4byte	.LASF14
+ 191 00a7 02       		.uleb128 0x2
+ 192 00a8 01       		.byte	0x1
+ 193 00a9 08       		.byte	0x8
+ 194 00aa F6010000 		.4byte	.LASF15
+ 195 00ae 05       		.uleb128 0x5
+ 196 00af 83010000 		.4byte	.LASF16
+ 197 00b3 04       		.byte	0x4
+ 198 00b4 4E02     		.2byte	0x24e
+ 199 00b6 BA000000 		.4byte	0xba
+ 200 00ba 06       		.uleb128 0x6
+ 201 00bb 04       		.byte	0x4
+ 202 00bc C0000000 		.4byte	0xc0
+ 203 00c0 07       		.uleb128 0x7
+ 204 00c1 02       		.uleb128 0x2
+ 205 00c2 04       		.byte	0x4
+ 206 00c3 07       		.byte	0x7
+ 207 00c4 D8010000 		.4byte	.LASF17
+ 208 00c8 08       		.uleb128 0x8
+ 209 00c9 90010000 		.4byte	.LASF18
+ 210 00cd 01       		.byte	0x1
+ 211 00ce 0E       		.byte	0xe
+ 212 00cf 00000000 		.4byte	.LFB63
+ 213 00d3 20000000 		.4byte	.LFE63-.LFB63
+ 214 00d7 01       		.uleb128 0x1
+ 215 00d8 9C       		.byte	0x9c
+ 216 00d9 56010000 		.4byte	0x156
+ 217 00dd 09       		.uleb128 0x9
+ 218 00de 6900     		.ascii	"i\000"
+ 219 00e0 01       		.byte	0x1
+ 220 00e1 10       		.byte	0x10
+ 221 00e2 88000000 		.4byte	0x88
+ 222 00e6 09       		.uleb128 0x9
+ 223 00e7 6A00     		.ascii	"j\000"
+ 224 00e9 01       		.byte	0x1
+ 225 00ea 10       		.byte	0x10
+ 226 00eb 88000000 		.4byte	0x88
+ 227 00ef 09       		.uleb128 0x9
+ 228 00f0 62756600 		.ascii	"buf\000"
+ 229 00f4 01       		.byte	0x1
+ 230 00f5 10       		.byte	0x10
+ 231 00f6 56010000 		.4byte	0x156
+ 232 00fa 0A       		.uleb128 0xa
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 6
+
+
+ 233 00fb 14020000 		.4byte	.LASF30
+ 234 00ff 01       		.byte	0x1
+ 235 0100 11       		.byte	0x11
+ 236 0101 25000000 		.4byte	0x25
+ 237 0105 00000000 		.4byte	.LLST0
+ 238 0109 0B       		.uleb128 0xb
+ 239 010a 06000000 		.4byte	.LVL1
+ 240 010e B1010000 		.4byte	0x1b1
+ 241 0112 0C       		.uleb128 0xc
+ 242 0113 0C000000 		.4byte	.LVL3
+ 243 0117 BC010000 		.4byte	0x1bc
+ 244 011b 26010000 		.4byte	0x126
+ 245 011f 0D       		.uleb128 0xd
+ 246 0120 01       		.uleb128 0x1
+ 247 0121 50       		.byte	0x50
+ 248 0122 02       		.uleb128 0x2
+ 249 0123 74       		.byte	0x74
+ 250 0124 00       		.sleb128 0
+ 251 0125 00       		.byte	0
+ 252 0126 0C       		.uleb128 0xc
+ 253 0127 12000000 		.4byte	.LVL4
+ 254 012b CD010000 		.4byte	0x1cd
+ 255 012f 3A010000 		.4byte	0x13a
+ 256 0133 0D       		.uleb128 0xd
+ 257 0134 01       		.uleb128 0x1
+ 258 0135 50       		.byte	0x50
+ 259 0136 02       		.uleb128 0x2
+ 260 0137 74       		.byte	0x74
+ 261 0138 00       		.sleb128 0
+ 262 0139 00       		.byte	0
+ 263 013a 0B       		.uleb128 0xb
+ 264 013b 16000000 		.4byte	.LVL5
+ 265 013f DE010000 		.4byte	0x1de
+ 266 0143 0B       		.uleb128 0xb
+ 267 0144 1A000000 		.4byte	.LVL6
+ 268 0148 E5010000 		.4byte	0x1e5
+ 269 014c 0B       		.uleb128 0xb
+ 270 014d 1E000000 		.4byte	.LVL7
+ 271 0151 EC010000 		.4byte	0x1ec
+ 272 0155 00       		.byte	0
+ 273 0156 0E       		.uleb128 0xe
+ 274 0157 88000000 		.4byte	0x88
+ 275 015b 66010000 		.4byte	0x166
+ 276 015f 0F       		.uleb128 0xf
+ 277 0160 C1000000 		.4byte	0xc1
+ 278 0164 07       		.byte	0x7
+ 279 0165 00       		.byte	0
+ 280 0166 10       		.uleb128 0x10
+ 281 0167 B4000000 		.4byte	.LASF19
+ 282 016b 01       		.byte	0x1
+ 283 016c 2C       		.byte	0x2c
+ 284 016d 6F000000 		.4byte	0x6f
+ 285 0171 00000000 		.4byte	.LFB64
+ 286 0175 14000000 		.4byte	.LFE64-.LFB64
+ 287 0179 01       		.uleb128 0x1
+ 288 017a 9C       		.byte	0x9c
+ 289 017b A0010000 		.4byte	0x1a0
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 7
+
+
+ 290 017f 0C       		.uleb128 0xc
+ 291 0180 0A000000 		.4byte	.LVL8
+ 292 0184 F3010000 		.4byte	0x1f3
+ 293 0188 96010000 		.4byte	0x196
+ 294 018c 0D       		.uleb128 0xd
+ 295 018d 01       		.uleb128 0x1
+ 296 018e 50       		.byte	0x50
+ 297 018f 05       		.uleb128 0x5
+ 298 0190 03       		.byte	0x3
+ 299 0191 00000000 		.4byte	isr_Slave
+ 300 0195 00       		.byte	0
+ 301 0196 0B       		.uleb128 0xb
+ 302 0197 0E000000 		.4byte	.LVL9
+ 303 019b 04020000 		.4byte	0x204
+ 304 019f 00       		.byte	0
+ 305 01a0 11       		.uleb128 0x11
+ 306 01a1 A0000000 		.4byte	.LASF31
+ 307 01a5 08       		.byte	0x8
+ 308 01a6 9606     		.2byte	0x696
+ 309 01a8 AC010000 		.4byte	0x1ac
+ 310 01ac 12       		.uleb128 0x12
+ 311 01ad 7D000000 		.4byte	0x7d
+ 312 01b1 13       		.uleb128 0x13
+ 313 01b2 30020000 		.4byte	.LASF32
+ 314 01b6 05       		.byte	0x5
+ 315 01b7 5C       		.byte	0x5c
+ 316 01b8 94000000 		.4byte	0x94
+ 317 01bc 14       		.uleb128 0x14
+ 318 01bd 1D020000 		.4byte	.LASF20
+ 319 01c1 05       		.byte	0x5
+ 320 01c2 55       		.byte	0x55
+ 321 01c3 CD010000 		.4byte	0x1cd
+ 322 01c7 15       		.uleb128 0x15
+ 323 01c8 94000000 		.4byte	0x94
+ 324 01cc 00       		.byte	0
+ 325 01cd 14       		.uleb128 0x14
+ 326 01ce 00000000 		.4byte	.LASF21
+ 327 01d2 06       		.byte	0x6
+ 328 01d3 26       		.byte	0x26
+ 329 01d4 DE010000 		.4byte	0x1de
+ 330 01d8 15       		.uleb128 0x15
+ 331 01d9 88000000 		.4byte	0x88
+ 332 01dd 00       		.byte	0
+ 333 01de 16       		.uleb128 0x16
+ 334 01df 5B010000 		.4byte	.LASF22
+ 335 01e3 05       		.byte	0x5
+ 336 01e4 68       		.byte	0x68
+ 337 01e5 16       		.uleb128 0x16
+ 338 01e6 24000000 		.4byte	.LASF23
+ 339 01ea 05       		.byte	0x5
+ 340 01eb 5F       		.byte	0x5f
+ 341 01ec 16       		.uleb128 0x16
+ 342 01ed 8B000000 		.4byte	.LASF24
+ 343 01f1 05       		.byte	0x5
+ 344 01f2 60       		.byte	0x60
+ 345 01f3 14       		.uleb128 0x14
+ 346 01f4 14000000 		.4byte	.LASF25
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 8
+
+
+ 347 01f8 07       		.byte	0x7
+ 348 01f9 18       		.byte	0x18
+ 349 01fa 04020000 		.4byte	0x204
+ 350 01fe 15       		.uleb128 0x15
+ 351 01ff AE000000 		.4byte	0xae
+ 352 0203 00       		.byte	0
+ 353 0204 16       		.uleb128 0x16
+ 354 0205 7E000000 		.4byte	.LASF26
+ 355 0209 05       		.byte	0x5
+ 356 020a 4B       		.byte	0x4b
+ 357 020b 00       		.byte	0
+ 358              		.section	.debug_abbrev,"",%progbits
+ 359              	.Ldebug_abbrev0:
+ 360 0000 01       		.uleb128 0x1
+ 361 0001 11       		.uleb128 0x11
+ 362 0002 01       		.byte	0x1
+ 363 0003 25       		.uleb128 0x25
+ 364 0004 0E       		.uleb128 0xe
+ 365 0005 13       		.uleb128 0x13
+ 366 0006 0B       		.uleb128 0xb
+ 367 0007 03       		.uleb128 0x3
+ 368 0008 0E       		.uleb128 0xe
+ 369 0009 1B       		.uleb128 0x1b
+ 370 000a 0E       		.uleb128 0xe
+ 371 000b 55       		.uleb128 0x55
+ 372 000c 17       		.uleb128 0x17
+ 373 000d 11       		.uleb128 0x11
+ 374 000e 01       		.uleb128 0x1
+ 375 000f 10       		.uleb128 0x10
+ 376 0010 17       		.uleb128 0x17
+ 377 0011 00       		.byte	0
+ 378 0012 00       		.byte	0
+ 379 0013 02       		.uleb128 0x2
+ 380 0014 24       		.uleb128 0x24
+ 381 0015 00       		.byte	0
+ 382 0016 0B       		.uleb128 0xb
+ 383 0017 0B       		.uleb128 0xb
+ 384 0018 3E       		.uleb128 0x3e
+ 385 0019 0B       		.uleb128 0xb
+ 386 001a 03       		.uleb128 0x3
+ 387 001b 0E       		.uleb128 0xe
+ 388 001c 00       		.byte	0
+ 389 001d 00       		.byte	0
+ 390 001e 03       		.uleb128 0x3
+ 391 001f 16       		.uleb128 0x16
+ 392 0020 00       		.byte	0
+ 393 0021 03       		.uleb128 0x3
+ 394 0022 0E       		.uleb128 0xe
+ 395 0023 3A       		.uleb128 0x3a
+ 396 0024 0B       		.uleb128 0xb
+ 397 0025 3B       		.uleb128 0x3b
+ 398 0026 0B       		.uleb128 0xb
+ 399 0027 49       		.uleb128 0x49
+ 400 0028 13       		.uleb128 0x13
+ 401 0029 00       		.byte	0
+ 402 002a 00       		.byte	0
+ 403 002b 04       		.uleb128 0x4
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 9
+
+
+ 404 002c 24       		.uleb128 0x24
+ 405 002d 00       		.byte	0
+ 406 002e 0B       		.uleb128 0xb
+ 407 002f 0B       		.uleb128 0xb
+ 408 0030 3E       		.uleb128 0x3e
+ 409 0031 0B       		.uleb128 0xb
+ 410 0032 03       		.uleb128 0x3
+ 411 0033 08       		.uleb128 0x8
+ 412 0034 00       		.byte	0
+ 413 0035 00       		.byte	0
+ 414 0036 05       		.uleb128 0x5
+ 415 0037 16       		.uleb128 0x16
+ 416 0038 00       		.byte	0
+ 417 0039 03       		.uleb128 0x3
+ 418 003a 0E       		.uleb128 0xe
+ 419 003b 3A       		.uleb128 0x3a
+ 420 003c 0B       		.uleb128 0xb
+ 421 003d 3B       		.uleb128 0x3b
+ 422 003e 05       		.uleb128 0x5
+ 423 003f 49       		.uleb128 0x49
+ 424 0040 13       		.uleb128 0x13
+ 425 0041 00       		.byte	0
+ 426 0042 00       		.byte	0
+ 427 0043 06       		.uleb128 0x6
+ 428 0044 0F       		.uleb128 0xf
+ 429 0045 00       		.byte	0
+ 430 0046 0B       		.uleb128 0xb
+ 431 0047 0B       		.uleb128 0xb
+ 432 0048 49       		.uleb128 0x49
+ 433 0049 13       		.uleb128 0x13
+ 434 004a 00       		.byte	0
+ 435 004b 00       		.byte	0
+ 436 004c 07       		.uleb128 0x7
+ 437 004d 15       		.uleb128 0x15
+ 438 004e 00       		.byte	0
+ 439 004f 27       		.uleb128 0x27
+ 440 0050 19       		.uleb128 0x19
+ 441 0051 00       		.byte	0
+ 442 0052 00       		.byte	0
+ 443 0053 08       		.uleb128 0x8
+ 444 0054 2E       		.uleb128 0x2e
+ 445 0055 01       		.byte	0x1
+ 446 0056 3F       		.uleb128 0x3f
+ 447 0057 19       		.uleb128 0x19
+ 448 0058 03       		.uleb128 0x3
+ 449 0059 0E       		.uleb128 0xe
+ 450 005a 3A       		.uleb128 0x3a
+ 451 005b 0B       		.uleb128 0xb
+ 452 005c 3B       		.uleb128 0x3b
+ 453 005d 0B       		.uleb128 0xb
+ 454 005e 27       		.uleb128 0x27
+ 455 005f 19       		.uleb128 0x19
+ 456 0060 11       		.uleb128 0x11
+ 457 0061 01       		.uleb128 0x1
+ 458 0062 12       		.uleb128 0x12
+ 459 0063 06       		.uleb128 0x6
+ 460 0064 40       		.uleb128 0x40
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 10
+
+
+ 461 0065 18       		.uleb128 0x18
+ 462 0066 9742     		.uleb128 0x2117
+ 463 0068 19       		.uleb128 0x19
+ 464 0069 01       		.uleb128 0x1
+ 465 006a 13       		.uleb128 0x13
+ 466 006b 00       		.byte	0
+ 467 006c 00       		.byte	0
+ 468 006d 09       		.uleb128 0x9
+ 469 006e 34       		.uleb128 0x34
+ 470 006f 00       		.byte	0
+ 471 0070 03       		.uleb128 0x3
+ 472 0071 08       		.uleb128 0x8
+ 473 0072 3A       		.uleb128 0x3a
+ 474 0073 0B       		.uleb128 0xb
+ 475 0074 3B       		.uleb128 0x3b
+ 476 0075 0B       		.uleb128 0xb
+ 477 0076 49       		.uleb128 0x49
+ 478 0077 13       		.uleb128 0x13
+ 479 0078 00       		.byte	0
+ 480 0079 00       		.byte	0
+ 481 007a 0A       		.uleb128 0xa
+ 482 007b 34       		.uleb128 0x34
+ 483 007c 00       		.byte	0
+ 484 007d 03       		.uleb128 0x3
+ 485 007e 0E       		.uleb128 0xe
+ 486 007f 3A       		.uleb128 0x3a
+ 487 0080 0B       		.uleb128 0xb
+ 488 0081 3B       		.uleb128 0x3b
+ 489 0082 0B       		.uleb128 0xb
+ 490 0083 49       		.uleb128 0x49
+ 491 0084 13       		.uleb128 0x13
+ 492 0085 02       		.uleb128 0x2
+ 493 0086 17       		.uleb128 0x17
+ 494 0087 00       		.byte	0
+ 495 0088 00       		.byte	0
+ 496 0089 0B       		.uleb128 0xb
+ 497 008a 898201   		.uleb128 0x4109
+ 498 008d 00       		.byte	0
+ 499 008e 11       		.uleb128 0x11
+ 500 008f 01       		.uleb128 0x1
+ 501 0090 31       		.uleb128 0x31
+ 502 0091 13       		.uleb128 0x13
+ 503 0092 00       		.byte	0
+ 504 0093 00       		.byte	0
+ 505 0094 0C       		.uleb128 0xc
+ 506 0095 898201   		.uleb128 0x4109
+ 507 0098 01       		.byte	0x1
+ 508 0099 11       		.uleb128 0x11
+ 509 009a 01       		.uleb128 0x1
+ 510 009b 31       		.uleb128 0x31
+ 511 009c 13       		.uleb128 0x13
+ 512 009d 01       		.uleb128 0x1
+ 513 009e 13       		.uleb128 0x13
+ 514 009f 00       		.byte	0
+ 515 00a0 00       		.byte	0
+ 516 00a1 0D       		.uleb128 0xd
+ 517 00a2 8A8201   		.uleb128 0x410a
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 11
+
+
+ 518 00a5 00       		.byte	0
+ 519 00a6 02       		.uleb128 0x2
+ 520 00a7 18       		.uleb128 0x18
+ 521 00a8 9142     		.uleb128 0x2111
+ 522 00aa 18       		.uleb128 0x18
+ 523 00ab 00       		.byte	0
+ 524 00ac 00       		.byte	0
+ 525 00ad 0E       		.uleb128 0xe
+ 526 00ae 01       		.uleb128 0x1
+ 527 00af 01       		.byte	0x1
+ 528 00b0 49       		.uleb128 0x49
+ 529 00b1 13       		.uleb128 0x13
+ 530 00b2 01       		.uleb128 0x1
+ 531 00b3 13       		.uleb128 0x13
+ 532 00b4 00       		.byte	0
+ 533 00b5 00       		.byte	0
+ 534 00b6 0F       		.uleb128 0xf
+ 535 00b7 21       		.uleb128 0x21
+ 536 00b8 00       		.byte	0
+ 537 00b9 49       		.uleb128 0x49
+ 538 00ba 13       		.uleb128 0x13
+ 539 00bb 2F       		.uleb128 0x2f
+ 540 00bc 0B       		.uleb128 0xb
+ 541 00bd 00       		.byte	0
+ 542 00be 00       		.byte	0
+ 543 00bf 10       		.uleb128 0x10
+ 544 00c0 2E       		.uleb128 0x2e
+ 545 00c1 01       		.byte	0x1
+ 546 00c2 3F       		.uleb128 0x3f
+ 547 00c3 19       		.uleb128 0x19
+ 548 00c4 03       		.uleb128 0x3
+ 549 00c5 0E       		.uleb128 0xe
+ 550 00c6 3A       		.uleb128 0x3a
+ 551 00c7 0B       		.uleb128 0xb
+ 552 00c8 3B       		.uleb128 0x3b
+ 553 00c9 0B       		.uleb128 0xb
+ 554 00ca 49       		.uleb128 0x49
+ 555 00cb 13       		.uleb128 0x13
+ 556 00cc 11       		.uleb128 0x11
+ 557 00cd 01       		.uleb128 0x1
+ 558 00ce 12       		.uleb128 0x12
+ 559 00cf 06       		.uleb128 0x6
+ 560 00d0 40       		.uleb128 0x40
+ 561 00d1 18       		.uleb128 0x18
+ 562 00d2 9742     		.uleb128 0x2117
+ 563 00d4 19       		.uleb128 0x19
+ 564 00d5 01       		.uleb128 0x1
+ 565 00d6 13       		.uleb128 0x13
+ 566 00d7 00       		.byte	0
+ 567 00d8 00       		.byte	0
+ 568 00d9 11       		.uleb128 0x11
+ 569 00da 34       		.uleb128 0x34
+ 570 00db 00       		.byte	0
+ 571 00dc 03       		.uleb128 0x3
+ 572 00dd 0E       		.uleb128 0xe
+ 573 00de 3A       		.uleb128 0x3a
+ 574 00df 0B       		.uleb128 0xb
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 12
+
+
+ 575 00e0 3B       		.uleb128 0x3b
+ 576 00e1 05       		.uleb128 0x5
+ 577 00e2 49       		.uleb128 0x49
+ 578 00e3 13       		.uleb128 0x13
+ 579 00e4 3F       		.uleb128 0x3f
+ 580 00e5 19       		.uleb128 0x19
+ 581 00e6 3C       		.uleb128 0x3c
+ 582 00e7 19       		.uleb128 0x19
+ 583 00e8 00       		.byte	0
+ 584 00e9 00       		.byte	0
+ 585 00ea 12       		.uleb128 0x12
+ 586 00eb 35       		.uleb128 0x35
+ 587 00ec 00       		.byte	0
+ 588 00ed 49       		.uleb128 0x49
+ 589 00ee 13       		.uleb128 0x13
+ 590 00ef 00       		.byte	0
+ 591 00f0 00       		.byte	0
+ 592 00f1 13       		.uleb128 0x13
+ 593 00f2 2E       		.uleb128 0x2e
+ 594 00f3 00       		.byte	0
+ 595 00f4 3F       		.uleb128 0x3f
+ 596 00f5 19       		.uleb128 0x19
+ 597 00f6 03       		.uleb128 0x3
+ 598 00f7 0E       		.uleb128 0xe
+ 599 00f8 3A       		.uleb128 0x3a
+ 600 00f9 0B       		.uleb128 0xb
+ 601 00fa 3B       		.uleb128 0x3b
+ 602 00fb 0B       		.uleb128 0xb
+ 603 00fc 27       		.uleb128 0x27
+ 604 00fd 19       		.uleb128 0x19
+ 605 00fe 49       		.uleb128 0x49
+ 606 00ff 13       		.uleb128 0x13
+ 607 0100 3C       		.uleb128 0x3c
+ 608 0101 19       		.uleb128 0x19
+ 609 0102 00       		.byte	0
+ 610 0103 00       		.byte	0
+ 611 0104 14       		.uleb128 0x14
+ 612 0105 2E       		.uleb128 0x2e
+ 613 0106 01       		.byte	0x1
+ 614 0107 3F       		.uleb128 0x3f
+ 615 0108 19       		.uleb128 0x19
+ 616 0109 03       		.uleb128 0x3
+ 617 010a 0E       		.uleb128 0xe
+ 618 010b 3A       		.uleb128 0x3a
+ 619 010c 0B       		.uleb128 0xb
+ 620 010d 3B       		.uleb128 0x3b
+ 621 010e 0B       		.uleb128 0xb
+ 622 010f 27       		.uleb128 0x27
+ 623 0110 19       		.uleb128 0x19
+ 624 0111 3C       		.uleb128 0x3c
+ 625 0112 19       		.uleb128 0x19
+ 626 0113 01       		.uleb128 0x1
+ 627 0114 13       		.uleb128 0x13
+ 628 0115 00       		.byte	0
+ 629 0116 00       		.byte	0
+ 630 0117 15       		.uleb128 0x15
+ 631 0118 05       		.uleb128 0x5
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 13
+
+
+ 632 0119 00       		.byte	0
+ 633 011a 49       		.uleb128 0x49
+ 634 011b 13       		.uleb128 0x13
+ 635 011c 00       		.byte	0
+ 636 011d 00       		.byte	0
+ 637 011e 16       		.uleb128 0x16
+ 638 011f 2E       		.uleb128 0x2e
+ 639 0120 00       		.byte	0
+ 640 0121 3F       		.uleb128 0x3f
+ 641 0122 19       		.uleb128 0x19
+ 642 0123 03       		.uleb128 0x3
+ 643 0124 0E       		.uleb128 0xe
+ 644 0125 3A       		.uleb128 0x3a
+ 645 0126 0B       		.uleb128 0xb
+ 646 0127 3B       		.uleb128 0x3b
+ 647 0128 0B       		.uleb128 0xb
+ 648 0129 27       		.uleb128 0x27
+ 649 012a 19       		.uleb128 0x19
+ 650 012b 3C       		.uleb128 0x3c
+ 651 012c 19       		.uleb128 0x19
+ 652 012d 00       		.byte	0
+ 653 012e 00       		.byte	0
+ 654 012f 00       		.byte	0
+ 655              		.section	.debug_loc,"",%progbits
+ 656              	.Ldebug_loc0:
+ 657              	.LLST0:
+ 658 0000 02000000 		.4byte	.LVL0
+ 659 0004 08000000 		.4byte	.LVL2
+ 660 0008 0600     		.2byte	0x6
+ 661 000a 9E       		.byte	0x9e
+ 662 000b 04       		.uleb128 0x4
+ 663 000c 00000000 		.4byte	0
+ 664 0010 08000000 		.4byte	.LVL2
+ 665 0014 20000000 		.4byte	.LFE63
+ 666 0018 0700     		.2byte	0x7
+ 667 001a 74       		.byte	0x74
+ 668 001b 00       		.sleb128 0
+ 669 001c F7       		.byte	0xf7
+ 670 001d 2C       		.uleb128 0x2c
+ 671 001e F7       		.byte	0xf7
+ 672 001f 25       		.uleb128 0x25
+ 673 0020 9F       		.byte	0x9f
+ 674 0021 00000000 		.4byte	0
+ 675 0025 00000000 		.4byte	0
+ 676              		.section	.debug_aranges,"",%progbits
+ 677 0000 24000000 		.4byte	0x24
+ 678 0004 0200     		.2byte	0x2
+ 679 0006 00000000 		.4byte	.Ldebug_info0
+ 680 000a 04       		.byte	0x4
+ 681 000b 00       		.byte	0
+ 682 000c 0000     		.2byte	0
+ 683 000e 0000     		.2byte	0
+ 684 0010 00000000 		.4byte	.LFB63
+ 685 0014 20000000 		.4byte	.LFE63-.LFB63
+ 686 0018 00000000 		.4byte	.LFB64
+ 687 001c 14000000 		.4byte	.LFE64-.LFB64
+ 688 0020 00000000 		.4byte	0
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 14
+
+
+ 689 0024 00000000 		.4byte	0
+ 690              		.section	.debug_ranges,"",%progbits
+ 691              	.Ldebug_ranges0:
+ 692 0000 00000000 		.4byte	.LFB63
+ 693 0004 20000000 		.4byte	.LFE63
+ 694 0008 00000000 		.4byte	.LFB64
+ 695 000c 14000000 		.4byte	.LFE64
+ 696 0010 00000000 		.4byte	0
+ 697 0014 00000000 		.4byte	0
+ 698              		.section	.debug_line,"",%progbits
+ 699              	.Ldebug_line0:
+ 700 0000 9D010000 		.section	.debug_str,"MS",%progbits,1
+ 700      02006901 
+ 700      00000201 
+ 700      FB0E0D00 
+ 700      01010101 
+ 701              	.LASF21:
+ 702 0000 4C45445F 		.ascii	"LED_Write\000"
+ 702      57726974 
+ 702      6500
+ 703              	.LASF10:
+ 704 000a 5F5F696E 		.ascii	"__int32_t\000"
+ 704      7433325F 
+ 704      7400
+ 705              	.LASF25:
+ 706 0014 6973725F 		.ascii	"isr_SPI_StartEx\000"
+ 706      5350495F 
+ 706      53746172 
+ 706      74457800 
+ 707              	.LASF23:
+ 708 0024 53504953 		.ascii	"SPIS_1_ClearRxBuffer\000"
+ 708      5F315F43 
+ 708      6C656172 
+ 708      52784275 
+ 708      66666572 
+ 709              	.LASF0:
+ 710 0039 666C6F61 		.ascii	"float\000"
+ 710      7400
+ 711              	.LASF2:
+ 712 003f 7369676E 		.ascii	"signed char\000"
+ 712      65642063 
+ 712      68617200 
+ 713              	.LASF3:
+ 714 004b 756E7369 		.ascii	"unsigned char\000"
+ 714      676E6564 
+ 714      20636861 
+ 714      7200
+ 715              	.LASF6:
+ 716 0059 6C6F6E67 		.ascii	"long unsigned int\000"
+ 716      20756E73 
+ 716      69676E65 
+ 716      6420696E 
+ 716      7400
+ 717              	.LASF1:
+ 718 006b 73686F72 		.ascii	"short unsigned int\000"
+ 718      7420756E 
+ 718      7369676E 
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 15
+
+
+ 718      65642069 
+ 718      6E7400
+ 719              	.LASF26:
+ 720 007e 53504953 		.ascii	"SPIS_1_Start\000"
+ 720      5F315F53 
+ 720      74617274 
+ 720      00
+ 721              	.LASF24:
+ 722 008b 53504953 		.ascii	"SPIS_1_ClearTxBuffer\000"
+ 722      5F315F43 
+ 722      6C656172 
+ 722      54784275 
+ 722      66666572 
+ 723              	.LASF31:
+ 724 00a0 49544D5F 		.ascii	"ITM_RxBuffer\000"
+ 724      52784275 
+ 724      66666572 
+ 724      00
+ 725              	.LASF14:
+ 726 00ad 646F7562 		.ascii	"double\000"
+ 726      6C6500
+ 727              	.LASF19:
+ 728 00b4 6D61696E 		.ascii	"main\000"
+ 728      00
+ 729              	.LASF13:
+ 730 00b9 75696E74 		.ascii	"uint16\000"
+ 730      313600
+ 731              	.LASF27:
+ 732 00c0 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 732      4320342E 
+ 732      392E3320 
+ 732      32303135 
+ 732      30333033 
+ 733 00f3 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 733      20726576 
+ 733      6973696F 
+ 733      6E203232 
+ 733      31323230 
+ 734 0126 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 734      66756E63 
+ 734      74696F6E 
+ 734      2D736563 
+ 734      74696F6E 
+ 735              	.LASF9:
+ 736 014e 756E7369 		.ascii	"unsigned int\000"
+ 736      676E6564 
+ 736      20696E74 
+ 736      00
+ 737              	.LASF22:
+ 738 015b 53504953 		.ascii	"SPIS_1_ClearFIFO\000"
+ 738      5F315F43 
+ 738      6C656172 
+ 738      4649464F 
+ 738      00
+ 739              	.LASF8:
+ 740 016c 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 740      206C6F6E 
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 16
+
+
+ 740      6720756E 
+ 740      7369676E 
+ 740      65642069 
+ 741              	.LASF16:
+ 742 0183 63796973 		.ascii	"cyisraddress\000"
+ 742      72616464 
+ 742      72657373 
+ 742      00
+ 743              	.LASF18:
+ 744 0190 6973725F 		.ascii	"isr_Slave\000"
+ 744      536C6176 
+ 744      6500
+ 745              	.LASF29:
+ 746 019a 433A5C55 		.ascii	"C:\\Users\\lauri\\Documents\\PSoC Creator\\SPI\\Sla"
+ 746      73657273 
+ 746      5C6C6175 
+ 746      72695C44 
+ 746      6F63756D 
+ 747 01c7 76652E63 		.ascii	"ve.cydsn\000"
+ 747      7964736E 
+ 747      00
+ 748              	.LASF11:
+ 749 01d0 696E7433 		.ascii	"int32_t\000"
+ 749      325F7400 
+ 750              	.LASF17:
+ 751 01d8 73697A65 		.ascii	"sizetype\000"
+ 751      74797065 
+ 751      00
+ 752              	.LASF7:
+ 753 01e1 6C6F6E67 		.ascii	"long long int\000"
+ 753      206C6F6E 
+ 753      6720696E 
+ 753      7400
+ 754              	.LASF28:
+ 755 01ef 6D61696E 		.ascii	"main.c\000"
+ 755      2E6300
+ 756              	.LASF15:
+ 757 01f6 63686172 		.ascii	"char\000"
+ 757      00
+ 758              	.LASF4:
+ 759 01fb 73686F72 		.ascii	"short int\000"
+ 759      7420696E 
+ 759      7400
+ 760              	.LASF12:
+ 761 0205 75696E74 		.ascii	"uint8\000"
+ 761      3800
+ 762              	.LASF5:
+ 763 020b 6C6F6E67 		.ascii	"long int\000"
+ 763      20696E74 
+ 763      00
+ 764              	.LASF30:
+ 765 0214 6D6F6474 		.ascii	"modtaget\000"
+ 765      61676574 
+ 765      00
+ 766              	.LASF20:
+ 767 021d 53504953 		.ascii	"SPIS_1_WriteTxData\000"
+ 767      5F315F57 
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccCYpoT2.s 			page 17
+
+
+ 767      72697465 
+ 767      54784461 
+ 767      746100
+ 768              	.LASF32:
+ 769 0230 53504953 		.ascii	"SPIS_1_ReadRxData\000"
+ 769      5F315F52 
+ 769      65616452 
+ 769      78446174 
+ 769      6100
+ 770              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br

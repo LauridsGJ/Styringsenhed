@@ -1,0 +1,6 @@
+C:\Users\lauri\Documents\PSoC Creator\SPI\Master.cydsn\Master.cyprj|4f2478c8-b25a-4edc-b2da-e90703ba5e9e
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|8597115a-5ffb-43de-a877-9865c038937f
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|925f8f6b-0fed-4ff9-865f-0122e9dee440
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|5c0b60fb-93cf-4656-aed2-4e45584e7fb9
+C:\Program Files (x86)\Cypress\PSoC Creator\4.0\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|d6b23896-3703-4d25-af5d-ea2da2cc10d5
+C:\Users\lauri\Documents\PSoC Creator\SPI\Slave.cydsn\Slave.cyprj|b891b060-ee55-4ef2-874b-e7a95f4debd1

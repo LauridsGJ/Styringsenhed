@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CyXmlSerializer>
+<!--This file is machine generated and read. It is not intended to be edited by hand.-->
+<!--Due to this, there is no schema for this file.-->
+<CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21 type_name="CyDesigner.Common.ProjMgmt.Model.CyPrjMgmtWrkspcCustomData" version="4">
+<CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997 type_name="CyDesigner.Common.Base.CyCustomData" version="2">
+<userData>
+<dataGuid v="1b906a0f-a7b6-4e4d-a428-82f98b53cb35">
+<CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35 type_name="CyDesigner.Common.ProjMgmt.GUI.CyExplorerWindow+CyExplorerWindowState" version="3" SelectedTab="Source">
+<TreeKeys>
+<v>Source</v>
+<v>Components</v>
+<v>Output</v>
+</TreeKeys>
+<TreeStates>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="SPI\Master\Source Files\main.c">
+<ExpandedNodeIds>
+<v>SPI</v>
+<v>SPI\Master\TopDesign</v>
+<v>SPI\Master\Master.cydwr</v>
+<v>SPI\Master\Master.cydwr\Pins</v>
+<v>SPI\Master\Master.cydwr\Analog</v>
+<v>SPI\Master\Master.cydwr\Clocks</v>
+<v>SPI\Master\Master.cydwr\Interrupts</v>
+<v>SPI\Master\Master.cydwr\DMA</v>
+<v>SPI\Master\Master.cydwr\System</v>
+<v>SPI\Master\Master.cydwr\Directives</v>
+<v>SPI\Master\Master.cydwr\Flash Security</v>
+<v>SPI\Master\Master.cydwr\EEPROM</v>
+<v>SPI\Master\Header Files</v>
+<v>SPI\Master\Header Files\cyapicallbacks.h</v>
+<v>SPI\Master\Source Files</v>
+<v>SPI\Master\Source Files\main.c</v>
+<v>SPI\Master\Generated_Source</v>
+<v>SPI\Master\Generated_Source\PSoC5</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\LED</v>
+<v>SPI\Master\Generated_Source\PSoC5\LED\LED.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\LED\LED.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\LED\LED_aliases.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\MISO</v>
+<v>SPI\Master\Generated_Source\PSoC5\MISO\MISO.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\MISO\MISO.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\MISO\MISO_aliases.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\MOSI</v>
+<v>SPI\Master\Generated_Source\PSoC5\MOSI\MOSI.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\MOSI\MOSI.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\MOSI\MOSI_aliases.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SCLK</v>
+<v>SPI\Master\Generated_Source\PSoC5\SCLK\SCLK.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\SCLK\SCLK.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SCLK\SCLK_aliases.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1\SPIM_1.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1\SPIM_1.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1\SPIM_1_INT.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1\SPIM_1_PM.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1\SPIM_1_PVT.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1_IntClock</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1_IntClock\SPIM_1_IntClock.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\SPIM_1_IntClock\SPIM_1_IntClock.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SS</v>
+<v>SPI\Master\Generated_Source\PSoC5\SS\SS.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\SS\SS.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\SS\SS_aliases.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>SPI\Master\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>SPI\Master\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydevice.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cyfitter.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>SPI\Master\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>SPI\Master\Generated_Source\PSoC5\cymetadata.c</v>
+<v>SPI\Master\Generated_Source\PSoC5\project.h</v>
+<v>SPI\Slave\TopDesign</v>
+<v>SPI\Slave\Slave.cydwr</v>
+<v>SPI\Slave\Slave.cydwr\Pins</v>
+<v>SPI\Slave\Slave.cydwr\Analog</v>
+<v>SPI\Slave\Slave.cydwr\Clocks</v>
+<v>SPI\Slave\Slave.cydwr\Interrupts</v>
+<v>SPI\Slave\Slave.cydwr\DMA</v>
+<v>SPI\Slave\Slave.cydwr\System</v>
+<v>SPI\Slave\Slave.cydwr\Directives</v>
+<v>SPI\Slave\Slave.cydwr\Flash Security</v>
+<v>SPI\Slave\Slave.cydwr\EEPROM</v>
+<v>SPI\Slave\Header Files</v>
+<v>SPI\Slave\Header Files\cyapicallbacks.h</v>
+<v>SPI\Slave\Source Files</v>
+<v>SPI\Slave\Source Files\main.c</v>
+<v>SPI\Slave\Generated_Source</v>
+<v>SPI\Slave\Generated_Source\PSoC5</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cm3gcc.ld</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\Cm3Iar.icf</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\Cm3RealView.scat</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\Cm3Start.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cmsis_armcc.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cmsis_gcc.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\core_cm3.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\core_cm3_psoc5.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\core_cmFunc.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\core_cmInstr.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyBootAsmGnu.s</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyBootAsmIar.s</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyBootAsmRv.s</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyDmac.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyDmac.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyFlash.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyFlash.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyLib.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CyLib.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cypins.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cyPm.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cyPm.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CySpc.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\CySpc.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cytypes.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cy_boot\cyutils.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\isr_SPI</v>
+<v>SPI\Slave\Generated_Source\PSoC5\isr_SPI\isr_SPI.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\isr_SPI\isr_SPI.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\LED</v>
+<v>SPI\Slave\Generated_Source\PSoC5\LED\LED.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\LED\LED.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\LED\LED_aliases.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MISO</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MISO\MISO.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MISO\MISO.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MISO\MISO_aliases.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MOSI</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MOSI\MOSI.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MOSI\MOSI.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\MOSI\MOSI_aliases.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SCLK</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SCLK\SCLK.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SCLK\SCLK.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SCLK\SCLK_aliases.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1\SPIS_1.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1\SPIS_1.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1\SPIS_1_BOOT.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1\SPIS_1_INT.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1\SPIS_1_PM.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1\SPIS_1_PVT.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1_IntClock</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1_IntClock\SPIS_1_IntClock.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SPIS_1_IntClock\SPIS_1_IntClock.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SS</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SS\SS.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SS\SS.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\SS\SS_aliases.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cycodeshareexport.ld</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cycodeshareimport.ld</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cycodeshareimport.scat</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydevice.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydevice_trm.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydevicegnu.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydevicegnu_trm.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydeviceiar.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydeviceiar_trm.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydevicerv.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydevicerv_trm.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cydisabledsheets.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cyfitter.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cyfitter_cfg.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cyfitter_cfg.h</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cyfittergnu.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cyfitteriar.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cyfitterrv.inc</v>
+<v>SPI\Slave\Generated_Source\PSoC5\cymetadata.c</v>
+<v>SPI\Slave\Generated_Source\PSoC5\project.h</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Slave</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Master\TopDesign</v>
+<v>SPI\Master\TopDesign\TopDesign.cysch</v>
+<v>SPI\Slave</v>
+<v>SPI\Slave\TopDesign</v>
+<v>SPI\Slave\TopDesign\TopDesign.cysch</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Master\TopDesign</v>
+<v>SPI\Master\TopDesign\TopDesign.cysch</v>
+<v>SPI\Slave</v>
+<v>SPI\Slave\TopDesign</v>
+<v>SPI\Slave\TopDesign\TopDesign.cysch</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Master\CortexM3</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\LED.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\MISO.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\MOSI.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SCLK.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_INT.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_IntClock.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_PM.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SS.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Master.elf</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Master.hex</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Master.map</v>
+<v>SPI\Master\Master.gpdsc</v>
+<v>SPI\Master\Master.rpt</v>
+<v>SPI\Master\Master_timing.html</v>
+<v>SPI\Slave</v>
+<v>SPI\Slave\CortexM3</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\isr_SPI.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\LED.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\MISO.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\MOSI.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SCLK.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIS_1.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIS_1_BOOT.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIS_1_INT.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIS_1_IntClock.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIS_1_PM.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Listing Files\SS.lst</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Slave.elf</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Slave.hex</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug\Slave.map</v>
+<v>SPI\Slave\Slave.gpdsc</v>
+<v>SPI\Slave\Slave.rpt</v>
+<v>SPI\Slave\Slave_timing.html</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Master\CortexM3</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\Cm3Start.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyBootAsmGnu.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyDmac.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cyfitter_cfg.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyFlash.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CyLib.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cymetadata.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cyPm.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\CySpc.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\cyutils.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\LED.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\main.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\MISO.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\MOSI.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SCLK.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_INT.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_IntClock.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SPIM_1_PM.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Listing Files\SS.lst</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Master.elf</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Master.hex</v>
+<v>SPI\Master\CortexM3\ARM_GCC_493\Debug\Master.map</v>
+<v>SPI\Master\Master.gpdsc</v>
+<v>SPI\Master\Master.rpt</v>
+<v>SPI\Master\Master_timing.html</v>
+<v>SPI\Slave</v>
+<v>SPI\Slave\CortexM3</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493</v>
+<v>SPI\Slave\CortexM3\ARM_GCC_493\Debug</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStates>
+<TreeKeysV2>
+<v>Datasheet</v>
+</TreeKeysV2>
+<TreeStatesV2>
+<CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237 type_name="CyDesigner.Common.Base.Controls.CyTreeViewState" version="1" SelectedNodeId="">
+<ExpandedNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Master\PSoC 5LP Architecture TRM</v>
+<v>SPI\Master\CY8C58LP Family Datasheet</v>
+<v>SPI\Master\System Reference Guides</v>
+<v>SPI\Master\System Reference Guides\cy_boot_v5_50</v>
+<v>SPI\Master\cy_constant_v1_0.pdf</v>
+<v>SPI\Master\cy_pins_v2_20</v>
+<v>SPI\Master\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SPI\Master\SPI_Master_v2_50.pdf</v>
+<v>SPI\Slave</v>
+<v>SPI\Slave\PSoC 5LP Architecture TRM</v>
+<v>SPI\Slave\CY8C58LP Family Datasheet</v>
+<v>SPI\Slave\System Reference Guides</v>
+<v>SPI\Slave\System Reference Guides\cy_boot_v5_50</v>
+<v>SPI\Slave\cy_constant_v1_0.pdf</v>
+<v>SPI\Slave\cy_isr_v1_70.pdf</v>
+<v>SPI\Slave\cy_pins_v2_20</v>
+<v>SPI\Slave\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SPI\Slave\SPI_Slave_v2_70.pdf</v>
+</ExpandedNodeIds>
+<VisibleNodeIds>
+<v>SPI</v>
+<v>SPI\Master</v>
+<v>SPI\Master\PSoC 5LP Architecture TRM</v>
+<v>SPI\Master\CY8C58LP Family Datasheet</v>
+<v>SPI\Master\System Reference Guides</v>
+<v>SPI\Master\System Reference Guides\cy_boot_v5_50</v>
+<v>SPI\Master\cy_constant_v1_0.pdf</v>
+<v>SPI\Master\cy_pins_v2_20</v>
+<v>SPI\Master\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SPI\Master\SPI_Master_v2_50.pdf</v>
+<v>SPI\Slave</v>
+<v>SPI\Slave\PSoC 5LP Architecture TRM</v>
+<v>SPI\Slave\CY8C58LP Family Datasheet</v>
+<v>SPI\Slave\System Reference Guides</v>
+<v>SPI\Slave\System Reference Guides\cy_boot_v5_50</v>
+<v>SPI\Slave\cy_constant_v1_0.pdf</v>
+<v>SPI\Slave\cy_isr_v1_70.pdf</v>
+<v>SPI\Slave\cy_pins_v2_20</v>
+<v>SPI\Slave\cy_pins_v2_20\cy_pins_v2_20.pdf</v>
+<v>SPI\Slave\SPI_Slave_v2_70.pdf</v>
+</VisibleNodeIds>
+</CyGuid_2a325b3b-c96a-4e9f-b7a0-2c44ecb5f237>
+</TreeStatesV2>
+</CyGuid_1b906a0f-a7b6-4e4d-a428-82f98b53cb35>
+</dataGuid>
+<dataGuid v="5f2be1a5-0687-4501-bb8c-cf21cb8211bf">
+<CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf type_name="CyDesigner.Common.ProjMgmt.GUI.CyBookmarkData" version="1">
+<indicators />
+</CyGuid_5f2be1a5-0687-4501-bb8c-cf21cb8211bf>
+</dataGuid>
+</userData>
+</CyGuid_fdba8dfd-b15b-4469-9bbb-9e40c3e70997>
+<Unloaded />
+<OpenDocs>
+<name v=".\Master.cydsn\TopDesign\TopDesign.cysch" />
+<name v=".\Slave.cydsn\main.c" />
+<name v=".\Master.cydsn\main.c" />
+<name v=".\Master.cydsn\Master.cydwr" />
+<name v=".\Slave.cydsn\TopDesign\TopDesign.cysch" />
+</OpenDocs>
+<OpenDocsLayout><![CDATA[<?xml version="1.0"?><!--
+
+  Actipro Docking/MDI for WinForms
+  Copyright (c) 2001-2016 Actipro Software LLC.  All rights reserved.
+  http://www.actiprosoftware.com
+
+--><DocumentLayout Version="1.0"><LayoutData><TabbedMdiRootContainer Orientation="Horizontal"><TabbedMdiContainer Size="1114, 464" SelectedTabbedMdiWindow="1f28338d-f707-42e8-a258-cc5cf0a728b4"><DocumentWindow Key="f8e14fd9-6496-4813-bc49-31b0f97d6577" Guid="f19e7f33-63b5-48bf-aa16-d19129b36f08" /><DocumentWindow Key="f72b56a0-319e-4978-b19e-5e32a0166c54" Guid="bbadb643-0aa7-4609-8f5d-39a0866f6e0d" /><DocumentWindow Key="54741ef9-4ce9-49fd-a7b4-1864e27846f9" Guid="1f28338d-f707-42e8-a258-cc5cf0a728b4" /><DocumentWindow Key="8f071b58-a4af-4974-b279-60957ea1ac76" Guid="6263afa0-90b5-4823-bb4a-816397848b40" /><DocumentWindow Key="a2772863-1723-48b9-b685-20305651f44b" Guid="ff95d38b-79c8-42d6-ad93-bf1e0a83c902" /></TabbedMdiContainer></TabbedMdiRootContainer><FloatingContainers /></LayoutData></DocumentLayout>]]></OpenDocsLayout>
+<config v="" />
+<AutoUpdate v="true" />
+</CyGuid_843a90a4-0c4b-4e44-991d-05e7fb117a21>
+</CyXmlSerializer>

@@ -1,0 +1,1133 @@
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m3
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 1
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.file	"cymetadata.c"
+  15              		.text
+  16              	.Ltext0:
+  17              		.cfi_sections	.debug_frame
+  18              		.global	cy_metadata
+  19              		.global	cy_meta_flashprotect
+  20              		.global	cy_meta_wonvl
+  21              		.global	cy_meta_custnvl
+  22              		.global	cy_meta_configecc
+  23              		.section	.cyconfigecc,"a",%progbits
+  24              		.align	2
+  25              		.type	cy_meta_configecc, %object
+  26              		.size	cy_meta_configecc, 608
+  27              	cy_meta_configecc:
+  28 0000 01       		.byte	1
+  29 0001 52       		.byte	82
+  30 0002 00       		.byte	0
+  31 0003 40       		.byte	64
+  32 0004 03       		.byte	3
+  33 0005 64       		.byte	100
+  34 0006 00       		.byte	0
+  35 0007 40       		.byte	64
+  36 0008 02       		.byte	2
+  37 0009 05       		.byte	5
+  38 000a 01       		.byte	1
+  39 000b 40       		.byte	64
+  40 000c 02       		.byte	2
+  41 000d 07       		.byte	7
+  42 000e 01       		.byte	1
+  43 000f 40       		.byte	64
+  44 0010 06       		.byte	6
+  45 0011 09       		.byte	9
+  46 0012 01       		.byte	1
+  47 0013 40       		.byte	64
+  48 0014 32       		.byte	50
+  49 0015 0A       		.byte	10
+  50 0016 01       		.byte	1
+  51 0017 40       		.byte	64
+  52 0018 39       		.byte	57
+  53 0019 0B       		.byte	11
+  54 001a 01       		.byte	1
+  55 001b 40       		.byte	64
+  56 001c 3E       		.byte	62
+  57 001d 0C       		.byte	12
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 2
+
+
+  58 001e 01       		.byte	1
+  59 001f 40       		.byte	64
+  60 0020 2B       		.byte	43
+  61 0021 0D       		.byte	13
+  62 0022 01       		.byte	1
+  63 0023 40       		.byte	64
+  64 0024 01       		.byte	1
+  65 0025 17       		.byte	23
+  66 0026 01       		.byte	1
+  67 0027 40       		.byte	64
+  68 0028 01       		.byte	1
+  69 0029 19       		.byte	25
+  70 002a 01       		.byte	1
+  71 002b 40       		.byte	64
+  72 002c 02       		.byte	2
+  73 002d 40       		.byte	64
+  74 002e 01       		.byte	1
+  75 002f 40       		.byte	64
+  76 0030 01       		.byte	1
+  77 0031 41       		.byte	65
+  78 0032 01       		.byte	1
+  79 0033 40       		.byte	64
+  80 0034 09       		.byte	9
+  81 0035 42       		.byte	66
+  82 0036 01       		.byte	1
+  83 0037 40       		.byte	64
+  84 0038 03       		.byte	3
+  85 0039 43       		.byte	67
+  86 003a 01       		.byte	1
+  87 003b 40       		.byte	64
+  88 003c 03       		.byte	3
+  89 003d 48       		.byte	72
+  90 003e 01       		.byte	1
+  91 003f 40       		.byte	64
+  92 0040 03       		.byte	3
+  93 0041 49       		.byte	73
+  94 0042 01       		.byte	1
+  95 0043 40       		.byte	64
+  96 0044 03       		.byte	3
+  97 0045 50       		.byte	80
+  98 0046 01       		.byte	1
+  99 0047 40       		.byte	64
+ 100 0048 01       		.byte	1
+ 101 0049 51       		.byte	81
+ 102 004a 01       		.byte	1
+ 103 004b 40       		.byte	64
+ 104 004c 61       		.byte	97
+ 105 004d 01       		.byte	1
+ 106 004e 8A       		.byte	-118
+ 107 004f 78       		.byte	120
+ 108 0050 8B       		.byte	-117
+ 109 0051 0F       		.byte	15
+ 110 0052 8C       		.byte	-116
+ 111 0053 47       		.byte	71
+ 112 0054 E2       		.byte	-30
+ 113 0055 80       		.byte	-128
+ 114 0056 E6       		.byte	-26
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 3
+
+
+ 115 0057 01       		.byte	1
+ 116 0058 E8       		.byte	-24
+ 117 0059 40       		.byte	64
+ 118 005a EC       		.byte	-20
+ 119 005b 04       		.byte	4
+ 120 005c A6       		.byte	-90
+ 121 005d 40       		.byte	64
+ 122 005e AB       		.byte	-85
+ 123 005f 01       		.byte	1
+ 124 0060 AC       		.byte	-84
+ 125 0061 02       		.byte	2
+ 126 0062 AF       		.byte	-81
+ 127 0063 08       		.byte	8
+ 128 0064 B5       		.byte	-75
+ 129 0065 08       		.byte	8
+ 130 0066 E8       		.byte	-24
+ 131 0067 40       		.byte	64
+ 132 0068 0B       		.byte	11
+ 133 0069 02       		.byte	2
+ 134 006a 13       		.byte	19
+ 135 006b 02       		.byte	2
+ 136 006c 15       		.byte	21
+ 137 006d 02       		.byte	2
+ 138 006e 19       		.byte	25
+ 139 006f 02       		.byte	2
+ 140 0070 1D       		.byte	29
+ 141 0071 02       		.byte	2
+ 142 0072 20       		.byte	32
+ 143 0073 01       		.byte	1
+ 144 0074 24       		.byte	36
+ 145 0075 01       		.byte	1
+ 146 0076 28       		.byte	40
+ 147 0077 01       		.byte	1
+ 148 0078 29       		.byte	41
+ 149 0079 01       		.byte	1
+ 150 007a 2E       		.byte	46
+ 151 007b 01       		.byte	1
+ 152 007c 35       		.byte	53
+ 153 007d 02       		.byte	2
+ 154 007e 36       		.byte	54
+ 155 007f 01       		.byte	1
+ 156 0080 37       		.byte	55
+ 157 0081 01       		.byte	1
+ 158 0082 3E       		.byte	62
+ 159 0083 40       		.byte	64
+ 160 0084 3F       		.byte	63
+ 161 0085 50       		.byte	80
+ 162 0086 54       		.byte	84
+ 163 0087 20       		.byte	32
+ 164 0088 56       		.byte	86
+ 165 0089 04       		.byte	4
+ 166 008a 58       		.byte	88
+ 167 008b 04       		.byte	4
+ 168 008c 59       		.byte	89
+ 169 008d 04       		.byte	4
+ 170 008e 5B       		.byte	91
+ 171 008f 04       		.byte	4
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 4
+
+
+ 172 0090 5F       		.byte	95
+ 173 0091 01       		.byte	1
+ 174 0092 84       		.byte	-124
+ 175 0093 01       		.byte	1
+ 176 0094 8C       		.byte	-116
+ 177 0095 20       		.byte	32
+ 178 0096 8E       		.byte	-114
+ 179 0097 02       		.byte	2
+ 180 0098 92       		.byte	-110
+ 181 0099 02       		.byte	2
+ 182 009a 93       		.byte	-109
+ 183 009b 01       		.byte	1
+ 184 009c 95       		.byte	-107
+ 185 009d 01       		.byte	1
+ 186 009e 96       		.byte	-106
+ 187 009f 3C       		.byte	60
+ 188 00a0 98       		.byte	-104
+ 189 00a1 02       		.byte	2
+ 190 00a2 9A       		.byte	-102
+ 191 00a3 08       		.byte	8
+ 192 00a4 9C       		.byte	-100
+ 193 00a5 02       		.byte	2
+ 194 00a6 9E       		.byte	-98
+ 195 00a7 04       		.byte	4
+ 196 00a8 9F       		.byte	-97
+ 197 00a9 02       		.byte	2
+ 198 00aa A4       		.byte	-92
+ 199 00ab 02       		.byte	2
+ 200 00ac A6       		.byte	-90
+ 201 00ad 10       		.byte	16
+ 202 00ae B2       		.byte	-78
+ 203 00af 3E       		.byte	62
+ 204 00b0 B4       		.byte	-76
+ 205 00b1 01       		.byte	1
+ 206 00b2 B5       		.byte	-75
+ 207 00b3 02       		.byte	2
+ 208 00b4 B7       		.byte	-73
+ 209 00b5 01       		.byte	1
+ 210 00b6 BE       		.byte	-66
+ 211 00b7 14       		.byte	20
+ 212 00b8 BF       		.byte	-65
+ 213 00b9 40       		.byte	64
+ 214 00ba D6       		.byte	-42
+ 215 00bb 02       		.byte	2
+ 216 00bc D7       		.byte	-41
+ 217 00bd 28       		.byte	40
+ 218 00be D8       		.byte	-40
+ 219 00bf 04       		.byte	4
+ 220 00c0 D9       		.byte	-39
+ 221 00c1 04       		.byte	4
+ 222 00c2 DB       		.byte	-37
+ 223 00c3 24       		.byte	36
+ 224 00c4 DC       		.byte	-36
+ 225 00c5 80       		.byte	-128
+ 226 00c6 DD       		.byte	-35
+ 227 00c7 80       		.byte	-128
+ 228 00c8 DE       		.byte	-34
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 5
+
+
+ 229 00c9 08       		.byte	8
+ 230 00ca DF       		.byte	-33
+ 231 00cb 01       		.byte	1
+ 232 00cc 05       		.byte	5
+ 233 00cd 08       		.byte	8
+ 234 00ce 07       		.byte	7
+ 235 00cf 01       		.byte	1
+ 236 00d0 0C       		.byte	12
+ 237 00d1 A0       		.byte	-96
+ 238 00d2 0E       		.byte	14
+ 239 00d3 A0       		.byte	-96
+ 240 00d4 10       		.byte	16
+ 241 00d5 AA       		.byte	-86
+ 242 00d6 17       		.byte	23
+ 243 00d7 04       		.byte	4
+ 244 00d8 18       		.byte	24
+ 245 00d9 01       		.byte	1
+ 246 00da 1A       		.byte	26
+ 247 00db 02       		.byte	2
+ 248 00dc 1D       		.byte	29
+ 249 00dd 08       		.byte	8
+ 250 00de 1F       		.byte	31
+ 251 00df 10       		.byte	16
+ 252 00e0 22       		.byte	34
+ 253 00e1 10       		.byte	16
+ 254 00e2 23       		.byte	35
+ 255 00e3 01       		.byte	1
+ 256 00e4 26       		.byte	38
+ 257 00e5 90       		.byte	-112
+ 258 00e6 2B       		.byte	43
+ 259 00e7 08       		.byte	8
+ 260 00e8 30       		.byte	48
+ 261 00e9 A0       		.byte	-96
+ 262 00ea 33       		.byte	51
+ 263 00eb 05       		.byte	5
+ 264 00ec 34       		.byte	52
+ 265 00ed 08       		.byte	8
+ 266 00ee 35       		.byte	53
+ 267 00ef 08       		.byte	8
+ 268 00f0 36       		.byte	54
+ 269 00f1 42       		.byte	66
+ 270 00f2 39       		.byte	57
+ 271 00f3 20       		.byte	32
+ 272 00f4 58       		.byte	88
+ 273 00f5 02       		.byte	2
+ 274 00f6 60       		.byte	96
+ 275 00f7 A0       		.byte	-96
+ 276 00f8 61       		.byte	97
+ 277 00f9 20       		.byte	32
+ 278 00fa 63       		.byte	99
+ 279 00fb 01       		.byte	1
+ 280 00fc 66       		.byte	102
+ 281 00fd 08       		.byte	8
+ 282 00fe 67       		.byte	103
+ 283 00ff 20       		.byte	32
+ 284 0100 6C       		.byte	108
+ 285 0101 AA       		.byte	-86
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 6
+
+
+ 286 0102 6F       		.byte	111
+ 287 0103 05       		.byte	5
+ 288 0104 7C       		.byte	124
+ 289 0105 08       		.byte	8
+ 290 0106 7F       		.byte	127
+ 291 0107 01       		.byte	1
+ 292 0108 80       		.byte	-128
+ 293 0109 80       		.byte	-128
+ 294 010a 8A       		.byte	-118
+ 295 010b 80       		.byte	-128
+ 296 010c 91       		.byte	-111
+ 297 010d 20       		.byte	32
+ 298 010e 94       		.byte	-108
+ 299 010f 01       		.byte	1
+ 300 0110 96       		.byte	-106
+ 301 0111 22       		.byte	34
+ 302 0112 97       		.byte	-105
+ 303 0113 02       		.byte	2
+ 304 0114 98       		.byte	-104
+ 305 0115 20       		.byte	32
+ 306 0116 9E       		.byte	-98
+ 307 0117 08       		.byte	8
+ 308 0118 A1       		.byte	-95
+ 309 0119 20       		.byte	32
+ 310 011a A2       		.byte	-94
+ 311 011b 02       		.byte	2
+ 312 011c A3       		.byte	-93
+ 313 011d 08       		.byte	8
+ 314 011e A5       		.byte	-91
+ 315 011f 08       		.byte	8
+ 316 0120 AA       		.byte	-86
+ 317 0121 01       		.byte	1
+ 318 0122 AB       		.byte	-85
+ 319 0123 08       		.byte	8
+ 320 0124 B4       		.byte	-76
+ 321 0125 01       		.byte	1
+ 322 0126 B6       		.byte	-74
+ 323 0127 20       		.byte	32
+ 324 0128 B7       		.byte	-73
+ 325 0129 44       		.byte	68
+ 326 012a C0       		.byte	-64
+ 327 012b A0       		.byte	-96
+ 328 012c C2       		.byte	-62
+ 329 012d F0       		.byte	-16
+ 330 012e C4       		.byte	-60
+ 331 012f 2F       		.byte	47
+ 332 0130 CA       		.byte	-54
+ 333 0131 04       		.byte	4
+ 334 0132 CC       		.byte	-52
+ 335 0133 DF       		.byte	-33
+ 336 0134 CE       		.byte	-50
+ 337 0135 04       		.byte	4
+ 338 0136 D6       		.byte	-42
+ 339 0137 01       		.byte	1
+ 340 0138 D8       		.byte	-40
+ 341 0139 4F       		.byte	79
+ 342 013a DE       		.byte	-34
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 7
+
+
+ 343 013b 50       		.byte	80
+ 344 013c E2       		.byte	-30
+ 345 013d 80       		.byte	-128
+ 346 013e 07       		.byte	7
+ 347 013f 01       		.byte	1
+ 348 0140 14       		.byte	20
+ 349 0141 05       		.byte	5
+ 350 0142 2A       		.byte	42
+ 351 0143 07       		.byte	7
+ 352 0144 2E       		.byte	46
+ 353 0145 01       		.byte	1
+ 354 0146 32       		.byte	50
+ 355 0147 02       		.byte	2
+ 356 0148 34       		.byte	52
+ 357 0149 04       		.byte	4
+ 358 014a 36       		.byte	54
+ 359 014b 01       		.byte	1
+ 360 014c 37       		.byte	55
+ 361 014d 01       		.byte	1
+ 362 014e 3E       		.byte	62
+ 363 014f 50       		.byte	80
+ 364 0150 40       		.byte	64
+ 365 0151 05       		.byte	5
+ 366 0152 41       		.byte	65
+ 367 0153 02       		.byte	2
+ 368 0154 42       		.byte	66
+ 369 0155 50       		.byte	80
+ 370 0156 44       		.byte	68
+ 371 0157 03       		.byte	3
+ 372 0158 49       		.byte	73
+ 373 0159 FF       		.byte	-1
+ 374 015a 4A       		.byte	74
+ 375 015b FF       		.byte	-1
+ 376 015c 4B       		.byte	75
+ 377 015d FF       		.byte	-1
+ 378 015e 4C       		.byte	76
+ 379 015f 02       		.byte	2
+ 380 0160 4E       		.byte	78
+ 381 0161 70       		.byte	112
+ 382 0162 4F       		.byte	79
+ 383 0163 0C       		.byte	12
+ 384 0164 50       		.byte	80
+ 385 0165 8C       		.byte	-116
+ 386 0166 51       		.byte	81
+ 387 0167 10       		.byte	16
+ 388 0168 54       		.byte	84
+ 389 0169 41       		.byte	65
+ 390 016a 58       		.byte	88
+ 391 016b 04       		.byte	4
+ 392 016c 59       		.byte	89
+ 393 016d 04       		.byte	4
+ 394 016e 5A       		.byte	90
+ 395 016f 24       		.byte	36
+ 396 0170 5B       		.byte	91
+ 397 0171 04       		.byte	4
+ 398 0172 5D       		.byte	93
+ 399 0173 08       		.byte	8
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 8
+
+
+ 400 0174 5F       		.byte	95
+ 401 0175 01       		.byte	1
+ 402 0176 68       		.byte	104
+ 403 0177 40       		.byte	64
+ 404 0178 69       		.byte	105
+ 405 0179 01       		.byte	1
+ 406 017a 6A       		.byte	106
+ 407 017b C0       		.byte	-64
+ 408 017c 6B       		.byte	107
+ 409 017d 01       		.byte	1
+ 410 017e 8B       		.byte	-117
+ 411 017f 01       		.byte	1
+ 412 0180 9D       		.byte	-99
+ 413 0181 01       		.byte	1
+ 414 0182 B5       		.byte	-75
+ 415 0183 01       		.byte	1
+ 416 0184 BF       		.byte	-65
+ 417 0185 10       		.byte	16
+ 418 0186 C0       		.byte	-64
+ 419 0187 01       		.byte	1
+ 420 0188 C1       		.byte	-63
+ 421 0189 02       		.byte	2
+ 422 018a C2       		.byte	-62
+ 423 018b 10       		.byte	16
+ 424 018c C4       		.byte	-60
+ 425 018d 03       		.byte	3
+ 426 018e C5       		.byte	-59
+ 427 018f 0E       		.byte	14
+ 428 0190 C6       		.byte	-58
+ 429 0191 DC       		.byte	-36
+ 430 0192 C7       		.byte	-57
+ 431 0193 BF       		.byte	-65
+ 432 0194 C8       		.byte	-56
+ 433 0195 3D       		.byte	61
+ 434 0196 C9       		.byte	-55
+ 435 0197 FF       		.byte	-1
+ 436 0198 CA       		.byte	-54
+ 437 0199 FF       		.byte	-1
+ 438 019a CB       		.byte	-53
+ 439 019b FF       		.byte	-1
+ 440 019c CC       		.byte	-52
+ 441 019d 23       		.byte	35
+ 442 019e CE       		.byte	-50
+ 443 019f F0       		.byte	-16
+ 444 01a0 CF       		.byte	-49
+ 445 01a1 0C       		.byte	12
+ 446 01a2 D0       		.byte	-48
+ 447 01a3 8C       		.byte	-116
+ 448 01a4 D1       		.byte	-47
+ 449 01a5 10       		.byte	16
+ 450 01a6 D6       		.byte	-42
+ 451 01a7 08       		.byte	8
+ 452 01a8 D9       		.byte	-39
+ 453 01a9 04       		.byte	4
+ 454 01aa DA       		.byte	-38
+ 455 01ab 24       		.byte	36
+ 456 01ac DB       		.byte	-37
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 9
+
+
+ 457 01ad 04       		.byte	4
+ 458 01ae DD       		.byte	-35
+ 459 01af 08       		.byte	8
+ 460 01b0 DF       		.byte	-33
+ 461 01b1 01       		.byte	1
+ 462 01b2 E8       		.byte	-24
+ 463 01b3 40       		.byte	64
+ 464 01b4 E9       		.byte	-23
+ 465 01b5 01       		.byte	1
+ 466 01b6 EA       		.byte	-22
+ 467 01b7 C0       		.byte	-64
+ 468 01b8 EB       		.byte	-21
+ 469 01b9 01       		.byte	1
+ 470 01ba 0E       		.byte	14
+ 471 01bb 10       		.byte	16
+ 472 01bc 16       		.byte	22
+ 473 01bd 05       		.byte	5
+ 474 01be 1E       		.byte	30
+ 475 01bf 10       		.byte	16
+ 476 01c0 1F       		.byte	31
+ 477 01c1 50       		.byte	80
+ 478 01c2 21       		.byte	33
+ 479 01c3 20       		.byte	32
+ 480 01c4 26       		.byte	38
+ 481 01c5 80       		.byte	-128
+ 482 01c6 2E       		.byte	46
+ 483 01c7 01       		.byte	1
+ 484 01c8 2F       		.byte	47
+ 485 01c9 80       		.byte	-128
+ 486 01ca 32       		.byte	50
+ 487 01cb 80       		.byte	-128
+ 488 01cc 3A       		.byte	58
+ 489 01cd 10       		.byte	16
+ 490 01ce 3B       		.byte	59
+ 491 01cf C0       		.byte	-64
+ 492 01d0 3F       		.byte	63
+ 493 01d1 08       		.byte	8
+ 494 01d2 40       		.byte	64
+ 495 01d3 01       		.byte	1
+ 496 01d4 41       		.byte	65
+ 497 01d5 08       		.byte	8
+ 498 01d6 42       		.byte	66
+ 499 01d7 08       		.byte	8
+ 500 01d8 45       		.byte	69
+ 501 01d9 08       		.byte	8
+ 502 01da 46       		.byte	70
+ 503 01db 08       		.byte	8
+ 504 01dc 4A       		.byte	74
+ 505 01dd 10       		.byte	16
+ 506 01de 4E       		.byte	78
+ 507 01df 01       		.byte	1
+ 508 01e0 51       		.byte	81
+ 509 01e1 10       		.byte	16
+ 510 01e2 52       		.byte	82
+ 511 01e3 22       		.byte	34
+ 512 01e4 53       		.byte	83
+ 513 01e5 88       		.byte	-120
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 10
+
+
+ 514 01e6 5A       		.byte	90
+ 515 01e7 21       		.byte	33
+ 516 01e8 5B       		.byte	91
+ 517 01e9 44       		.byte	68
+ 518 01ea 5E       		.byte	94
+ 519 01eb 20       		.byte	32
+ 520 01ec 5F       		.byte	95
+ 521 01ed 48       		.byte	72
+ 522 01ee 61       		.byte	97
+ 523 01ef 40       		.byte	64
+ 524 01f0 62       		.byte	98
+ 525 01f1 15       		.byte	21
+ 526 01f2 63       		.byte	99
+ 527 01f3 08       		.byte	8
+ 528 01f4 67       		.byte	103
+ 529 01f5 20       		.byte	32
+ 530 01f6 7B       		.byte	123
+ 531 01f7 02       		.byte	2
+ 532 01f8 7F       		.byte	127
+ 533 01f9 03       		.byte	3
+ 534 01fa 88       		.byte	-120
+ 535 01fb 20       		.byte	32
+ 536 01fc 89       		.byte	-119
+ 537 01fd 40       		.byte	64
+ 538 01fe C2       		.byte	-62
+ 539 01ff 20       		.byte	32
+ 540 0200 C4       		.byte	-60
+ 541 0201 C0       		.byte	-64
+ 542 0202 CC       		.byte	-52
+ 543 0203 08       		.byte	8
+ 544 0204 CE       		.byte	-50
+ 545 0205 44       		.byte	68
+ 546 0206 D0       		.byte	-48
+ 547 0207 6E       		.byte	110
+ 548 0208 D2       		.byte	-46
+ 549 0209 10       		.byte	16
+ 550 020a D6       		.byte	-42
+ 551 020b 7F       		.byte	127
+ 552 020c D8       		.byte	-40
+ 553 020d 4F       		.byte	79
+ 554 020e DE       		.byte	-34
+ 555 020f 18       		.byte	24
+ 556 0210 EC       		.byte	-20
+ 557 0211 02       		.byte	2
+ 558 0212 AE       		.byte	-82
+ 559 0213 40       		.byte	64
+ 560 0214 32       		.byte	50
+ 561 0215 40       		.byte	64
+ 562 0216 CC       		.byte	-52
+ 563 0217 10       		.byte	16
+ 564 0218 96       		.byte	-106
+ 565 0219 80       		.byte	-128
+ 566 021a 03       		.byte	3
+ 567 021b 20       		.byte	32
+ 568 021c 04       		.byte	4
+ 569 021d 02       		.byte	2
+ 570 021e 52       		.byte	82
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 11
+
+
+ 571 021f 80       		.byte	-128
+ 572 0220 82       		.byte	-126
+ 573 0221 40       		.byte	64
+ 574 0222 8A       		.byte	-118
+ 575 0223 80       		.byte	-128
+ 576 0224 96       		.byte	-106
+ 577 0225 80       		.byte	-128
+ 578 0226 C0       		.byte	-64
+ 579 0227 30       		.byte	48
+ 580 0228 D4       		.byte	-44
+ 581 0229 20       		.byte	32
+ 582 022a E6       		.byte	-26
+ 583 022b 80       		.byte	-128
+ 584 022c AB       		.byte	-85
+ 585 022d 20       		.byte	32
+ 586 022e B4       		.byte	-76
+ 587 022f 01       		.byte	1
+ 588 0230 EC       		.byte	-20
+ 589 0231 20       		.byte	32
+ 590 0232 9F       		.byte	-97
+ 591 0233 02       		.byte	2
+ 592 0234 AF       		.byte	-81
+ 593 0235 02       		.byte	2
+ 594 0236 EC       		.byte	-20
+ 595 0237 40       		.byte	64
+ 596 0238 17       		.byte	23
+ 597 0239 02       		.byte	2
+ 598 023a 9F       		.byte	-97
+ 599 023b 02       		.byte	2
+ 600 023c C4       		.byte	-60
+ 601 023d 20       		.byte	32
+ 602 023e 00       		.byte	0
+ 603 023f 01       		.byte	1
+ 604 0240 0C       		.byte	12
+ 605 0241 01       		.byte	1
+ 606 0242 0E       		.byte	14
+ 607 0243 01       		.byte	1
+ 608 0244 00       		.byte	0
+ 609 0245 03       		.byte	3
+ 610 0246 00       		.byte	0
+ 611 0247 00       		.byte	0
+ 612 0248 0E       		.byte	14
+ 613 0249 01       		.byte	1
+ 614 024a 01       		.byte	1
+ 615 024b 00       		.byte	0
+ 616 024c 01       		.byte	1
+ 617 024d 00       		.byte	0
+ 618 024e 00       		.byte	0
+ 619 024f 00       		.byte	0
+ 620 0250 00       		.byte	0
+ 621 0251 0B       		.byte	11
+ 622 0252 0B       		.byte	11
+ 623 0253 00       		.byte	0
+ 624 0254 00       		.byte	0
+ 625 0255 00       		.byte	0
+ 626 0256 00       		.byte	0
+ 627 0257 00       		.byte	0
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 12
+
+
+ 628 0258 00       		.byte	0
+ 629 0259 02       		.byte	2
+ 630 025a 02       		.byte	2
+ 631 025b 00       		.byte	0
+ 632 025c 00       		.byte	0
+ 633 025d 00       		.byte	0
+ 634 025e 00       		.byte	0
+ 635 025f 00       		.byte	0
+ 636              		.section	.cywolatch,"a",%progbits
+ 637              		.align	2
+ 638              		.type	cy_meta_wonvl, %object
+ 639              		.size	cy_meta_wonvl, 4
+ 640              	cy_meta_wonvl:
+ 641 0000 BC       		.byte	-68
+ 642 0001 90       		.byte	-112
+ 643 0002 AC       		.byte	-84
+ 644 0003 AF       		.byte	-81
+ 645              		.section	.cycustnvl,"a",%progbits
+ 646              		.align	2
+ 647              		.type	cy_meta_custnvl, %object
+ 648              		.size	cy_meta_custnvl, 4
+ 649              	cy_meta_custnvl:
+ 650 0000 00       		.byte	0
+ 651 0001 00       		.byte	0
+ 652 0002 40       		.byte	64
+ 653 0003 05       		.byte	5
+ 654              		.section	.cymeta,"a",%progbits
+ 655              		.align	2
+ 656              		.type	cy_metadata, %object
+ 657              		.size	cy_metadata, 12
+ 658              	cy_metadata:
+ 659 0000 00       		.byte	0
+ 660 0001 01       		.byte	1
+ 661 0002 2E       		.byte	46
+ 662 0003 16       		.byte	22
+ 663 0004 10       		.byte	16
+ 664 0005 69       		.byte	105
+ 665 0006 00       		.byte	0
+ 666 0007 01       		.byte	1
+ 667 0008 00       		.byte	0
+ 668 0009 00       		.byte	0
+ 669 000a 00       		.byte	0
+ 670 000b 00       		.byte	0
+ 671              		.section	.cyflashprotect,"a",%progbits
+ 672              		.align	2
+ 673              		.type	cy_meta_flashprotect, %object
+ 674              		.size	cy_meta_flashprotect, 256
+ 675              	cy_meta_flashprotect:
+ 676 0000 00000000 		.space	256
+ 676      00000000 
+ 676      00000000 
+ 676      00000000 
+ 676      00000000 
+ 677              		.text
+ 678              	.Letext0:
+ 679              		.file 1 "Generated_Source\\PSoC5\\cymetadata.c"
+ 680              		.file 2 "Generated_Source\\PSoC5\\cytypes.h"
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 13
+
+
+ 681              		.section	.debug_info,"",%progbits
+ 682              	.Ldebug_info0:
+ 683 0000 37010000 		.4byte	0x137
+ 684 0004 0400     		.2byte	0x4
+ 685 0006 00000000 		.4byte	.Ldebug_abbrev0
+ 686 000a 04       		.byte	0x4
+ 687 000b 01       		.uleb128 0x1
+ 688 000c 6E000000 		.4byte	.LASF18
+ 689 0010 01       		.byte	0x1
+ 690 0011 BA010000 		.4byte	.LASF19
+ 691 0015 35010000 		.4byte	.LASF20
+ 692 0019 00000000 		.4byte	.Ldebug_line0
+ 693 001d 02       		.uleb128 0x2
+ 694 001e 01       		.byte	0x1
+ 695 001f 06       		.byte	0x6
+ 696 0020 AE010000 		.4byte	.LASF0
+ 697 0024 02       		.uleb128 0x2
+ 698 0025 01       		.byte	0x1
+ 699 0026 08       		.byte	0x8
+ 700 0027 12000000 		.4byte	.LASF1
+ 701 002b 02       		.uleb128 0x2
+ 702 002c 02       		.byte	0x2
+ 703 002d 05       		.byte	0x5
+ 704 002e 95010000 		.4byte	.LASF2
+ 705 0032 02       		.uleb128 0x2
+ 706 0033 02       		.byte	0x2
+ 707 0034 07       		.byte	0x7
+ 708 0035 32000000 		.4byte	.LASF3
+ 709 0039 02       		.uleb128 0x2
+ 710 003a 04       		.byte	0x4
+ 711 003b 05       		.byte	0x5
+ 712 003c A5010000 		.4byte	.LASF4
+ 713 0040 02       		.uleb128 0x2
+ 714 0041 04       		.byte	0x4
+ 715 0042 07       		.byte	0x7
+ 716 0043 20000000 		.4byte	.LASF5
+ 717 0047 02       		.uleb128 0x2
+ 718 0048 08       		.byte	0x8
+ 719 0049 05       		.byte	0x5
+ 720 004a 82010000 		.4byte	.LASF6
+ 721 004e 02       		.uleb128 0x2
+ 722 004f 08       		.byte	0x8
+ 723 0050 07       		.byte	0x7
+ 724 0051 09010000 		.4byte	.LASF7
+ 725 0055 03       		.uleb128 0x3
+ 726 0056 04       		.byte	0x4
+ 727 0057 05       		.byte	0x5
+ 728 0058 696E7400 		.ascii	"int\000"
+ 729 005c 02       		.uleb128 0x2
+ 730 005d 04       		.byte	0x4
+ 731 005e 07       		.byte	0x7
+ 732 005f FC000000 		.4byte	.LASF8
+ 733 0063 04       		.uleb128 0x4
+ 734 0064 9F010000 		.4byte	.LASF21
+ 735 0068 02       		.byte	0x2
+ 736 0069 9201     		.2byte	0x192
+ 737 006b 24000000 		.4byte	0x24
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 14
+
+
+ 738 006f 02       		.uleb128 0x2
+ 739 0070 04       		.byte	0x4
+ 740 0071 04       		.byte	0x4
+ 741 0072 0C000000 		.4byte	.LASF9
+ 742 0076 02       		.uleb128 0x2
+ 743 0077 08       		.byte	0x8
+ 744 0078 04       		.byte	0x4
+ 745 0079 45000000 		.4byte	.LASF10
+ 746 007d 02       		.uleb128 0x2
+ 747 007e 01       		.byte	0x1
+ 748 007f 08       		.byte	0x8
+ 749 0080 90010000 		.4byte	.LASF11
+ 750 0084 05       		.uleb128 0x5
+ 751 0085 63000000 		.4byte	0x63
+ 752 0089 95000000 		.4byte	0x95
+ 753 008d 06       		.uleb128 0x6
+ 754 008e 95000000 		.4byte	0x95
+ 755 0092 5F02     		.2byte	0x25f
+ 756 0094 00       		.byte	0
+ 757 0095 02       		.uleb128 0x2
+ 758 0096 04       		.byte	0x4
+ 759 0097 07       		.byte	0x7
+ 760 0098 79010000 		.4byte	.LASF12
+ 761 009c 07       		.uleb128 0x7
+ 762 009d 5C000000 		.4byte	.LASF13
+ 763 00a1 01       		.byte	0x1
+ 764 00a2 1F       		.byte	0x1f
+ 765 00a3 AD000000 		.4byte	0xad
+ 766 00a7 05       		.uleb128 0x5
+ 767 00a8 03       		.byte	0x3
+ 768 00a9 00000000 		.4byte	cy_meta_configecc
+ 769 00ad 08       		.uleb128 0x8
+ 770 00ae 84000000 		.4byte	0x84
+ 771 00b2 05       		.uleb128 0x5
+ 772 00b3 63000000 		.4byte	0x63
+ 773 00b7 C2000000 		.4byte	0xc2
+ 774 00bb 09       		.uleb128 0x9
+ 775 00bc 95000000 		.4byte	0x95
+ 776 00c0 03       		.byte	0x3
+ 777 00c1 00       		.byte	0
+ 778 00c2 07       		.uleb128 0x7
+ 779 00c3 4C000000 		.4byte	.LASF14
+ 780 00c7 01       		.byte	0x1
+ 781 00c8 78       		.byte	0x78
+ 782 00c9 D3000000 		.4byte	0xd3
+ 783 00cd 05       		.uleb128 0x5
+ 784 00ce 03       		.byte	0x3
+ 785 00cf 00000000 		.4byte	cy_meta_custnvl
+ 786 00d3 08       		.uleb128 0x8
+ 787 00d4 B2000000 		.4byte	0xb2
+ 788 00d8 07       		.uleb128 0x7
+ 789 00d9 6B010000 		.4byte	.LASF15
+ 790 00dd 01       		.byte	0x1
+ 791 00de 86       		.byte	0x86
+ 792 00df E9000000 		.4byte	0xe9
+ 793 00e3 05       		.uleb128 0x5
+ 794 00e4 03       		.byte	0x3
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 15
+
+
+ 795 00e5 00000000 		.4byte	cy_meta_wonvl
+ 796 00e9 08       		.uleb128 0x8
+ 797 00ea B2000000 		.4byte	0xb2
+ 798 00ee 05       		.uleb128 0x5
+ 799 00ef 63000000 		.4byte	0x63
+ 800 00f3 FE000000 		.4byte	0xfe
+ 801 00f7 09       		.uleb128 0x9
+ 802 00f8 95000000 		.4byte	0x95
+ 803 00fc FF       		.byte	0xff
+ 804 00fd 00       		.byte	0
+ 805 00fe 07       		.uleb128 0x7
+ 806 00ff 20010000 		.4byte	.LASF16
+ 807 0103 01       		.byte	0x1
+ 808 0104 94       		.byte	0x94
+ 809 0105 0F010000 		.4byte	0x10f
+ 810 0109 05       		.uleb128 0x5
+ 811 010a 03       		.byte	0x3
+ 812 010b 00000000 		.4byte	cy_meta_flashprotect
+ 813 010f 08       		.uleb128 0x8
+ 814 0110 EE000000 		.4byte	0xee
+ 815 0114 05       		.uleb128 0x5
+ 816 0115 63000000 		.4byte	0x63
+ 817 0119 24010000 		.4byte	0x124
+ 818 011d 09       		.uleb128 0x9
+ 819 011e 95000000 		.4byte	0x95
+ 820 0122 0B       		.byte	0xb
+ 821 0123 00       		.byte	0
+ 822 0124 07       		.uleb128 0x7
+ 823 0125 00000000 		.4byte	.LASF17
+ 824 0129 01       		.byte	0x1
+ 825 012a C1       		.byte	0xc1
+ 826 012b 35010000 		.4byte	0x135
+ 827 012f 05       		.uleb128 0x5
+ 828 0130 03       		.byte	0x3
+ 829 0131 00000000 		.4byte	cy_metadata
+ 830 0135 08       		.uleb128 0x8
+ 831 0136 14010000 		.4byte	0x114
+ 832 013a 00       		.byte	0
+ 833              		.section	.debug_abbrev,"",%progbits
+ 834              	.Ldebug_abbrev0:
+ 835 0000 01       		.uleb128 0x1
+ 836 0001 11       		.uleb128 0x11
+ 837 0002 01       		.byte	0x1
+ 838 0003 25       		.uleb128 0x25
+ 839 0004 0E       		.uleb128 0xe
+ 840 0005 13       		.uleb128 0x13
+ 841 0006 0B       		.uleb128 0xb
+ 842 0007 03       		.uleb128 0x3
+ 843 0008 0E       		.uleb128 0xe
+ 844 0009 1B       		.uleb128 0x1b
+ 845 000a 0E       		.uleb128 0xe
+ 846 000b 10       		.uleb128 0x10
+ 847 000c 17       		.uleb128 0x17
+ 848 000d 00       		.byte	0
+ 849 000e 00       		.byte	0
+ 850 000f 02       		.uleb128 0x2
+ 851 0010 24       		.uleb128 0x24
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 16
+
+
+ 852 0011 00       		.byte	0
+ 853 0012 0B       		.uleb128 0xb
+ 854 0013 0B       		.uleb128 0xb
+ 855 0014 3E       		.uleb128 0x3e
+ 856 0015 0B       		.uleb128 0xb
+ 857 0016 03       		.uleb128 0x3
+ 858 0017 0E       		.uleb128 0xe
+ 859 0018 00       		.byte	0
+ 860 0019 00       		.byte	0
+ 861 001a 03       		.uleb128 0x3
+ 862 001b 24       		.uleb128 0x24
+ 863 001c 00       		.byte	0
+ 864 001d 0B       		.uleb128 0xb
+ 865 001e 0B       		.uleb128 0xb
+ 866 001f 3E       		.uleb128 0x3e
+ 867 0020 0B       		.uleb128 0xb
+ 868 0021 03       		.uleb128 0x3
+ 869 0022 08       		.uleb128 0x8
+ 870 0023 00       		.byte	0
+ 871 0024 00       		.byte	0
+ 872 0025 04       		.uleb128 0x4
+ 873 0026 16       		.uleb128 0x16
+ 874 0027 00       		.byte	0
+ 875 0028 03       		.uleb128 0x3
+ 876 0029 0E       		.uleb128 0xe
+ 877 002a 3A       		.uleb128 0x3a
+ 878 002b 0B       		.uleb128 0xb
+ 879 002c 3B       		.uleb128 0x3b
+ 880 002d 05       		.uleb128 0x5
+ 881 002e 49       		.uleb128 0x49
+ 882 002f 13       		.uleb128 0x13
+ 883 0030 00       		.byte	0
+ 884 0031 00       		.byte	0
+ 885 0032 05       		.uleb128 0x5
+ 886 0033 01       		.uleb128 0x1
+ 887 0034 01       		.byte	0x1
+ 888 0035 49       		.uleb128 0x49
+ 889 0036 13       		.uleb128 0x13
+ 890 0037 01       		.uleb128 0x1
+ 891 0038 13       		.uleb128 0x13
+ 892 0039 00       		.byte	0
+ 893 003a 00       		.byte	0
+ 894 003b 06       		.uleb128 0x6
+ 895 003c 21       		.uleb128 0x21
+ 896 003d 00       		.byte	0
+ 897 003e 49       		.uleb128 0x49
+ 898 003f 13       		.uleb128 0x13
+ 899 0040 2F       		.uleb128 0x2f
+ 900 0041 05       		.uleb128 0x5
+ 901 0042 00       		.byte	0
+ 902 0043 00       		.byte	0
+ 903 0044 07       		.uleb128 0x7
+ 904 0045 34       		.uleb128 0x34
+ 905 0046 00       		.byte	0
+ 906 0047 03       		.uleb128 0x3
+ 907 0048 0E       		.uleb128 0xe
+ 908 0049 3A       		.uleb128 0x3a
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 17
+
+
+ 909 004a 0B       		.uleb128 0xb
+ 910 004b 3B       		.uleb128 0x3b
+ 911 004c 0B       		.uleb128 0xb
+ 912 004d 49       		.uleb128 0x49
+ 913 004e 13       		.uleb128 0x13
+ 914 004f 3F       		.uleb128 0x3f
+ 915 0050 19       		.uleb128 0x19
+ 916 0051 02       		.uleb128 0x2
+ 917 0052 18       		.uleb128 0x18
+ 918 0053 00       		.byte	0
+ 919 0054 00       		.byte	0
+ 920 0055 08       		.uleb128 0x8
+ 921 0056 26       		.uleb128 0x26
+ 922 0057 00       		.byte	0
+ 923 0058 49       		.uleb128 0x49
+ 924 0059 13       		.uleb128 0x13
+ 925 005a 00       		.byte	0
+ 926 005b 00       		.byte	0
+ 927 005c 09       		.uleb128 0x9
+ 928 005d 21       		.uleb128 0x21
+ 929 005e 00       		.byte	0
+ 930 005f 49       		.uleb128 0x49
+ 931 0060 13       		.uleb128 0x13
+ 932 0061 2F       		.uleb128 0x2f
+ 933 0062 0B       		.uleb128 0xb
+ 934 0063 00       		.byte	0
+ 935 0064 00       		.byte	0
+ 936 0065 00       		.byte	0
+ 937              		.section	.debug_aranges,"",%progbits
+ 938 0000 14000000 		.4byte	0x14
+ 939 0004 0200     		.2byte	0x2
+ 940 0006 00000000 		.4byte	.Ldebug_info0
+ 941 000a 04       		.byte	0x4
+ 942 000b 00       		.byte	0
+ 943 000c 0000     		.2byte	0
+ 944 000e 0000     		.2byte	0
+ 945 0010 00000000 		.4byte	0
+ 946 0014 00000000 		.4byte	0
+ 947              		.section	.debug_line,"",%progbits
+ 948              	.Ldebug_line0:
+ 949 0000 4D000000 		.section	.debug_str,"MS",%progbits,1
+ 949      02004700 
+ 949      00000201 
+ 949      FB0E0D00 
+ 949      01010101 
+ 950              	.LASF17:
+ 951 0000 63795F6D 		.ascii	"cy_metadata\000"
+ 951      65746164 
+ 951      61746100 
+ 952              	.LASF9:
+ 953 000c 666C6F61 		.ascii	"float\000"
+ 953      7400
+ 954              	.LASF1:
+ 955 0012 756E7369 		.ascii	"unsigned char\000"
+ 955      676E6564 
+ 955      20636861 
+ 955      7200
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 18
+
+
+ 956              	.LASF5:
+ 957 0020 6C6F6E67 		.ascii	"long unsigned int\000"
+ 957      20756E73 
+ 957      69676E65 
+ 957      6420696E 
+ 957      7400
+ 958              	.LASF3:
+ 959 0032 73686F72 		.ascii	"short unsigned int\000"
+ 959      7420756E 
+ 959      7369676E 
+ 959      65642069 
+ 959      6E7400
+ 960              	.LASF10:
+ 961 0045 646F7562 		.ascii	"double\000"
+ 961      6C6500
+ 962              	.LASF14:
+ 963 004c 63795F6D 		.ascii	"cy_meta_custnvl\000"
+ 963      6574615F 
+ 963      63757374 
+ 963      6E766C00 
+ 964              	.LASF13:
+ 965 005c 63795F6D 		.ascii	"cy_meta_configecc\000"
+ 965      6574615F 
+ 965      636F6E66 
+ 965      69676563 
+ 965      6300
+ 966              	.LASF18:
+ 967 006e 474E5520 		.ascii	"GNU C 4.9.3 20150303 (release) [ARM/embedded-4_9-br"
+ 967      4320342E 
+ 967      392E3320 
+ 967      32303135 
+ 967      30333033 
+ 968 00a1 616E6368 		.ascii	"anch revision 221220] -mcpu=cortex-m3 -mthumb -g -O"
+ 968      20726576 
+ 968      6973696F 
+ 968      6E203232 
+ 968      31323230 
+ 969 00d4 67202D66 		.ascii	"g -ffunction-sections -ffat-lto-objects\000"
+ 969      66756E63 
+ 969      74696F6E 
+ 969      2D736563 
+ 969      74696F6E 
+ 970              	.LASF8:
+ 971 00fc 756E7369 		.ascii	"unsigned int\000"
+ 971      676E6564 
+ 971      20696E74 
+ 971      00
+ 972              	.LASF7:
+ 973 0109 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 973      206C6F6E 
+ 973      6720756E 
+ 973      7369676E 
+ 973      65642069 
+ 974              	.LASF16:
+ 975 0120 63795F6D 		.ascii	"cy_meta_flashprotect\000"
+ 975      6574615F 
+ 975      666C6173 
+ARM GAS  C:\Users\lauri\AppData\Local\Temp\ccRr0LVS.s 			page 19
+
+
+ 975      6870726F 
+ 975      74656374 
+ 976              	.LASF20:
+ 977 0135 433A5C55 		.ascii	"C:\\Users\\lauri\\Documents\\PSoC Creator\\SPI\\Sla"
+ 977      73657273 
+ 977      5C6C6175 
+ 977      72695C44 
+ 977      6F63756D 
+ 978 0162 76652E63 		.ascii	"ve.cydsn\000"
+ 978      7964736E 
+ 978      00
+ 979              	.LASF15:
+ 980 016b 63795F6D 		.ascii	"cy_meta_wonvl\000"
+ 980      6574615F 
+ 980      776F6E76 
+ 980      6C00
+ 981              	.LASF12:
+ 982 0179 73697A65 		.ascii	"sizetype\000"
+ 982      74797065 
+ 982      00
+ 983              	.LASF6:
+ 984 0182 6C6F6E67 		.ascii	"long long int\000"
+ 984      206C6F6E 
+ 984      6720696E 
+ 984      7400
+ 985              	.LASF11:
+ 986 0190 63686172 		.ascii	"char\000"
+ 986      00
+ 987              	.LASF2:
+ 988 0195 73686F72 		.ascii	"short int\000"
+ 988      7420696E 
+ 988      7400
+ 989              	.LASF21:
+ 990 019f 75696E74 		.ascii	"uint8\000"
+ 990      3800
+ 991              	.LASF4:
+ 992 01a5 6C6F6E67 		.ascii	"long int\000"
+ 992      20696E74 
+ 992      00
+ 993              	.LASF0:
+ 994 01ae 7369676E 		.ascii	"signed char\000"
+ 994      65642063 
+ 994      68617200 
+ 995              	.LASF19:
+ 996 01ba 47656E65 		.ascii	"Generated_Source\\PSoC5\\cymetadata.c\000"
+ 996      72617465 
+ 996      645F536F 
+ 996      75726365 
+ 996      5C50536F 
+ 997              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 4.9.3 20150303 (release) [ARM/embedded-4_9-br
