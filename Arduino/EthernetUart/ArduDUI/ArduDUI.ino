@@ -2,7 +2,7 @@
 #include <Ethernet.h>
 
 byte mac[] = {0x90, 0xA2, 0xDA, 0x0F, 0x1B, 0x82};   // MAC Address
-byte ip[] = {169, 254, 43, 129};                          // Network Address
+byte ip[] = {192, 168, 0, 129};                          // Network Address
 
 byte gateway[] = {10, 0, 0, 1};                      // Gateway Address
 byte subnet[] = {255, 255, 0, 0};                  // Subnet Mask
@@ -67,30 +67,38 @@ void loop()
   Serial.print("\n MCTHD: ");
   Serial.write(MCTHD);
   Serial.write(MCTHD1);
-//  Serial2.write('A');
-//  M1Strom = Serial2.read();
-//  M1Strom1 = Serial2.read();  
-//  Serial.print("\n M1Strøm: ");
-//  Serial.write(M1Strom);
-//  Serial.write(M1Strom1);
-//  Serial2.write('B');
-//  M1Spanding = Serial2.read();
-//  M1Spanding1 = Serial2.read();  
-//  Serial.print("\n M1Spanding: ");
-//  Serial.write(M1Spanding);
-//  Serial.write(M1Spanding1);
-//  Serial2.write('C');
-//  M1pf = Serial2.read();
-//  M1pf1 = Serial2.read();
-//  Serial.print("\n M1pf: ");
-//  Serial.write(M1pf);
-//  Serial.write(M1pf1);
-//  Serial2.write('D');
-//  M1THD = Serial2.read();
-//  M1THD1 = Serial2.read();
-//  Serial.print("\n M1THD: ");
-//  Serial.write(M1THD);
-//  Serial.write(M1THD1);
+  Serial2.write('A');
+  delay(4);
+  M1Strom = Serial2.read();
+  delay(4);
+  M1Strom1 = Serial2.read();  
+  Serial.print("\n M1Strøm: ");
+  Serial.write(M1Strom);
+  Serial.write(M1Strom1);
+  Serial2.write('B');
+  delay(4);
+  M1Spanding = Serial2.read();
+  delay(4);
+  M1Spanding1 = Serial2.read();  
+  Serial.print("\n M1Spanding: ");
+  Serial.write(M1Spanding);
+  Serial.write(M1Spanding1);
+  Serial2.write('C');
+  delay(4);
+  M1pf = Serial2.read();
+  delay(4);
+  M1pf1 = Serial2.read();
+  Serial.print("\n M1pf: ");
+  Serial.write(M1pf);
+  Serial.write(M1pf1);
+  Serial2.write('D');
+  delay(4);
+  M1THD = Serial2.read();
+  delay(4);
+  M1THD1 = Serial2.read();
+  Serial.print("\n M1THD: ");
+  Serial.write(M1THD);
+  Serial.write(M1THD1);
 //}
 
 
