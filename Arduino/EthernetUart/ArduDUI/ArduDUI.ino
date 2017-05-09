@@ -10,11 +10,20 @@ byte subnet[] = {255, 255, 0, 0};                  // Subnet Mask
 EthernetServer server = EthernetServer(27015);
 
  int ReadArray[4];
-  int MCStrom = 4, MCStrom1 = 200, MCSpanding = 5, MCSpanding1 = 20,MCpf = 250, MCpf1 = 50, MCTHD = 20,  MCTHD1 = 20;
-  int M1Strom = 48, M1Strom1 = 90, M1Spanding = 50, M1Spanding1= 60, M1pf= 40, M1pf1= 30, M1THD = 50, M1THD1 = 60;
+  int MCStrom, MCStrom1, MCSpanding, MCSpanding1, MCpf, MCpf1, MCTHD,  MCTHD1;
+  int M1Strom, M1Strom1, M1Spanding, M1Spanding1, M1pf, M1pf1, M1THD, M1THD1;
+volatile int read1;
+
+
+int receive()
+{
+    read1 = 1;
+}
+
 
 void setup()
 {
+  attachInterrupt(digitalPinToInterrupt(19),receive, RISING);
     Serial.begin(9600);
          Serial.println("IP Address: ");
          Serial.println(ip[0]);
@@ -36,9 +45,12 @@ void loop()
 //if(Serial.read()=='1')
 //{
   Serial1.write('A');
-  delay(4);
+  
+while(read1!=1);
+  read1 = 0;
+
   MCStrom = Serial1.read();
-  delay(4);
+  delay(3);
   MCStrom1 = Serial1.read();
   Serial.print("\n MCStrøm: ");
   Serial.write(MCStrom);
@@ -46,29 +58,35 @@ void loop()
   Serial1.write('B');
    delay(4);
   MCSpanding = Serial1.read();
-   delay(4);
+   delay(2);
   MCSpanding1 = Serial1.read();
   Serial.print("\n MCSpanding: ");
   Serial.write(MCSpanding);
   Serial.write(MCSpanding1);
   Serial1.write('C');
-   delay(4);
-  MCpf = Serial1.read();
-   delay(4);
-  MCpf1 = Serial1.read();
-  Serial.print("\n MCpf: ");
-  Serial.write(MCpf);
-  Serial.write(MCpf1);
-  Serial1.write('D');
-   delay(4);
-  MCTHD= Serial1.read();
-   delay(4);
-  MCTHD1= Serial1.read();
+  delay(4);
+  MCTHD = Serial1.read();
+  delay(2);
+  MCTHD1 = Serial1.read();
   Serial.print("\n MCTHD: ");
   Serial.write(MCTHD);
   Serial.write(MCTHD1);
+  Serial1.write('D');
+   delay(4);
+  MCpf= Serial1.read();
+   delay(2);
+  MCpf1= Serial1.read();
+  Serial.print("\n MCpf: ");
+  Serial.write(MCpf);
+  Serial.write(MCpf1);
+  
+  
+  
   Serial2.write('A');
-  delay(4);
+  
+  while(read1!=1);
+  read1 = 0;
+  
   M1Strom = Serial2.read();
   delay(4);
   M1Strom1 = Serial2.read();  
@@ -85,20 +103,20 @@ void loop()
   Serial.write(M1Spanding1);
   Serial2.write('C');
   delay(4);
-  M1pf = Serial2.read();
-  delay(4);
-  M1pf1 = Serial2.read();
-  Serial.print("\n M1pf: ");
-  Serial.write(M1pf);
-  Serial.write(M1pf1);
-  Serial2.write('D');
-  delay(4);
   M1THD = Serial2.read();
   delay(4);
   M1THD1 = Serial2.read();
   Serial.print("\n M1THD: ");
   Serial.write(M1THD);
   Serial.write(M1THD1);
+  Serial2.write('D');
+  delay(4);
+  M1pf = Serial2.read();
+  delay(4);
+  M1pf1 = Serial2.read();
+  Serial.print("\n M1pf: ");
+  Serial.write(M1pf);
+  Serial.write(M1pf1);
 //}
 
 
@@ -121,10 +139,10 @@ Serial.println("client connected");
               client.write(MCStrom1);
               client.write(MCSpanding);
               client.write(MCSpanding1);
-              client.write(MCpf);
-              client.write(MCpf1);
               client.write(MCTHD);
               client.write(MCTHD1);
+              client.write(MCpf);
+              client.write(MCpf1);
             }
           
             if(m == '2')
@@ -134,10 +152,10 @@ Serial.println("client connected");
               client.write(M1Strom1);
               client.write(M1Spanding);
               client.write(M1Spanding1);
-              client.write(M1pf);
-              client.write(M1pf1);
               client.write(M1THD);
               client.write(M1THD1);
+              client.write(M1pf);
+              client.write(M1pf1);
             }
 
           }
@@ -163,4 +181,8 @@ Serial.println("client connected");
      // Serial.println("client disconnected");
   }
 }
+
+
+
+
 
