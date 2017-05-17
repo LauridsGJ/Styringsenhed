@@ -4,9 +4,6 @@
 byte mac[] = {0x90, 0xA2, 0xDA, 0x0F, 0x1B, 0x82};   // MAC Address
 byte ip[] = {192, 168, 0, 129};                          // Network Address
 
-byte gateway[] = {10, 0, 0, 1};                      // Gateway Address
-byte subnet[] = {255, 255, 0, 0};                  // Subnet Mask
-
 EthernetServer server = EthernetServer(27015);
 
  int ReadArray[4];
