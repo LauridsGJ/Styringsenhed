@@ -4,9 +4,6 @@
 byte mac[] = {0x90, 0xA2, 0xDA, 0x0F, 0x1B, 0x82};   // MAC Address
 byte ip[] = {192, 168, 0, 129};                          // Network Address
 
-byte gateway[] = {10, 0, 0, 1};                      // Gateway Address
-byte subnet[] = {255, 255, 0, 0};                  // Subnet Mask
-
 EthernetServer server = EthernetServer(27015);
 
  int ReadArray[4];
@@ -88,7 +85,7 @@ while(read1!=1);
   read1 = 0;
   
   M1Strom = Serial2.read();
-  delay(4);
+  delay(3);
   M1Strom1 = Serial2.read();  
   Serial.print("\n M1Strøm: ");
   Serial.write(M1Strom);
@@ -96,7 +93,7 @@ while(read1!=1);
   Serial2.write('B');
   delay(4);
   M1Spanding = Serial2.read();
-  delay(4);
+  delay(2);
   M1Spanding1 = Serial2.read();  
   Serial.print("\n M1Spanding: ");
   Serial.write(M1Spanding);
@@ -104,7 +101,7 @@ while(read1!=1);
   Serial2.write('C');
   delay(4);
   M1THD = Serial2.read();
-  delay(4);
+  delay(2);
   M1THD1 = Serial2.read();
   Serial.print("\n M1THD: ");
   Serial.write(M1THD);
@@ -112,7 +109,7 @@ while(read1!=1);
   Serial2.write('D');
   delay(4);
   M1pf = Serial2.read();
-  delay(4);
+  delay(2);
   M1pf1 = Serial2.read();
   Serial.print("\n M1pf: ");
   Serial.write(M1pf);
